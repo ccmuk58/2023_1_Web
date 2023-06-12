@@ -5,22 +5,27 @@
 	width: 100%;
 	height: 80px;
 	justify-content: space-between;
-	background-color: #ddd;
+	background-color: #fff;
 	color: #000;
 	z-index: 10;
 	padding: 0 10%;
 }
+#navbar>*{
+	position: relative;
+	align-self: center;
+}
 #navbar a{
 	display: inline-block;
-	width: 100px;
-	line-height: 80px;
+	width: 120px;
 	font-size: 20px;
 	text-align: center;
 	color: #000;
 	text-decoration: none;
 }
 #navbar #logo{
-	font-size: 40px;
+	width: 80px;
+	font-size: 50px;
+	color: #fbb90d;
 }
 #navbar #menu {
 	list-style: none;
@@ -36,11 +41,11 @@
 	content: "";
 	position:absolute;
 	width: 0;
-	bottom: 20%;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	height: 3px;
-	background-color: red;
+	background-color: #db0007;
 	transition: all .3s ease-out;
 }
 #navbar #menu a:hover::after {
@@ -49,6 +54,7 @@
 /* -------- 섹션 공통 스타일 -------- */
 /* 개별 섹션 css는 협업 편의성을 위해 개별 파일로 분리 */
 .section {
-	background-color: #bbb;
+	background-color: #fbb90d;
+	color: #000;
 	text-align: center;
 }
