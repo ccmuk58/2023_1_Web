@@ -1,8 +1,19 @@
-#titleSection
+#titleSection 
 {
-	
+	color: red;
+	font-weight: bold;
 }
 #titleSection h1
 {
-	font-size: 100px;
+	font-size: 120px;
+}
+#titleSection h2
+{
+	font-size: 30px;
+}
+
+#titleSection #title1
+{
+	background-image: url(./img/temp_hamburger.jpg);
+	background-size: cover;
 }

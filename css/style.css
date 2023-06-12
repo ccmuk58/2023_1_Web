@@ -19,25 +19,36 @@
 	color: #000;
 	text-decoration: none;
 }
-#navbar>a{
+#navbar #logo{
 	font-size: 40px;
 }
-#navbar ul {
+#navbar #menu {
 	list-style: none;
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
-#navbar ul a:hover{
-	background-color: #bbb;
+/* 네비게이션 바 애니메이션 */
+#navbar #menu a{
+	position: relative;
 }
-#navbar ul li a {
+#navbar #menu a::after {
+	content: "";
+	position:absolute;
+	width: 0;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 3px;
+	background-color: red;
+	transition: all .3s ease-out;
 }
-
+#navbar #menu a:hover::after {
+	width: 80%;
+}
 /* -------- 섹션 공통 스타일 -------- */
 /* 개별 섹션 css는 협업 편의성을 위해 개별 파일로 분리 */
 .section {
 	background-color: #bbb;
 	text-align: center;
 }
-

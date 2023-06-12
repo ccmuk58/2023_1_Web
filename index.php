@@ -45,8 +45,8 @@
 <body>
 	<!-- 상단 네비게이션 바 -->
 	<div id="navbar">
-	  <a href="">Z</a>
-	  <ul>
+	  <a href="" id="logo">Z</a>
+	  <ul id="menu">
 		<li><a href="#title">Title</a></li>
 		<li><a href="#menu">Menu</a></li>
 		<li><a href="#branch">Branch</a></li>
