@@ -1,4 +1,29 @@
-#branchStyle
-{
-	
+#branchSection{
+	align-content: center;
+
+}
+
+#branchContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #fff;
+	width: 80%;
+	margin: 0 auto;
+	padding: 100px 0;
+	border-radius: 100px;
+}
+#branchTextList{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: left;
+	list-style: none;
+	font-size: 24px;
+}
+#map{
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	border: 2px solid;
 }

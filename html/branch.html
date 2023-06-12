@@ -1,2 +1,18 @@
 <link rel="stylesheet" href="./css/branchStyle.css">
-<h1>branch Section</h1>
+
+<div id="branchContent">
+	<ul id="branchTextList">
+		<li>대진대학교 본점</li>
+		<li>태릉입구역점</li>
+		<li>망월사역점</li>
+		<li>구리역점</li>
+	</ul>
+	<div id="map"></div>
+</div>
+
+<script>
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.73, 127.11),
+    zoom: 10
+});
+</script>
