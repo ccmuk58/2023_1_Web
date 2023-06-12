@@ -27,7 +27,7 @@
 		$(document).ready(function () {
 			$('#fullpage').fullpage({
 				// 앵커 설정
-				anchors:['title', 'menu', 'branch', 'info'], 
+				anchors:['title', 'menu', 'locate', 'info'], 
 				// 스크롤 속도 설정
 				scrollingSpeed: 700,
 				// 세로 스크롤 순환 설정
@@ -50,7 +50,7 @@
 	  <ul id="menu">
 		<li><a href="#title">Title</a></li>
 		<li><a href="#menu">Menu</a></li>
-		<li><a href="#branch">Branch</a></li>
+		<li><a href="#locate">Locate</a></li>
 		<li><a href="#info">Info</a></li>
 	  </ul>
 	</div>
@@ -65,8 +65,8 @@
 		<?php include('html/menu.html'); ?>
 	  </div>
 
-	  <div class="section" id="branchSection">
-		<?php include('html/branch.html'); ?>
+	  <div class="section" id="locateSection">
+		<?php include('html/locate.html'); ?>
 	  </div>
 	  
 	  <div class="section" id="infoSection">

@@ -1,7 +1,7 @@
-#branchSection{
+#locateSection{
 }
 
-#branchContent{
+#locateContent{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,28 +12,28 @@
 	margin: 0 auto;
 	border-radius: 100px;
 }
-#branchContent #infoContent{
+#locateContent #infoContent{
 	display: flex;
 	flex-direction: row;
 	height: 90vh;
 }
-#branchContent #infoContent #map{
+#locateContent #infoContent #map{
 	flex: 1;
 	border: 2px solid;
 }
-#branchContent #infoContent #branchInfo{
+#locateContent #infoContent #locateInfo{
 	flex: 1;
 	border: 1px solid;
 	background-color: #fbb90d;
 }
-#branchContent #branchList{
+#locateContent #locateList{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	text-align: center;
 }
 
-#branchContent #branchList button{
+#locateContent #locateList button{
 	flex:1;
 	height: 5vh;
 	font-size: 1.5vh;
