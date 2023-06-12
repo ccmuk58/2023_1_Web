@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Wallpaper</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.fullpage.js"></script>
+        <link href="js/jquery.fullpage.min.css" rel="stylesheet">
+        <style>
+            .section {
+                background-attachment: fixed;
+                background-position: top left;
+                text-align: center;
+            }
+            #section1 {
+                background-image: url(images/wall1.jpg);
+            }
+            #slide1 {
+                background-image: url(images/nature1.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide2 {
+                background-image: url(images/nature2.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide3 {
+                background-image: url(images/nature3.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide4 {
+                background-image: url(images/archi1.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide5 {
+                background-image: url(images/archi2.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide6 {
+                background-image: url(images/archi3.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide7 {
+                background-image: url(images/car1.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide8 {
+                background-image: url(images/car2.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            #slide9 {
+                background-image: url(images/car3.jpg);
+                background-size: cover;
+                padding: 6% 0 0 0;
+            }
+            h1 {
+                font-size: 5em;
+                color: white;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-align: center;
+            }
+			#menu li {
+				display:inline-block;
+				margin: 10px;
+				color: #000;
+				background:#fff;
+				background: rgba(255,255,255, 0.5);
+				-webkit-border-radius: 10px;
+						border-radius: 10px;
+			}
+			#menu li.active{
+				background:#666;
+				background: rgba(0,0,0, 0.5);
+				color: #fff;
+			}
+			#menu li a{
+				text-decoration:none;
+				color: #000;
+			}
+			#menu li.active a:hover{
+				color: #000;
+			}
+			#menu li:hover{
+				background: rgba(255,255,255, 0.8);
+			}
+			#menu li a,
+			#menu li.active a{
+				padding: 9px 18px;
+				display:block;
+			}
+			#menu li.active a{
+				color: #fff;
+			}
+			#menu{
+				position:fixed;
+				top:0;
+				left:0;
+				height: 40px;
+				z-index: 70;
+				width: 100%;
+				padding: 0;
+				margin:0;
+			}        
+		</style>
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    // fullpage option 기술하는 곳 
+                    anchors: ['home', 'nature', 'archi', 'car'],
+                    varticalCentered: false,
+                    scrollingSpeed: 1000,
+                    navigation: true,
+                    slideNavigation: true,
+                    continuousVertical: true,
+                    easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+                }); 
+            });
+        </script>
+    </head>
+    <body>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#nature">Nature</a></li>
+            <li><a href="#archi">Architecture</a></li>
+            <li><a href="#car">Car</a></li>
+        </ul>
+        <div id="fullpage">
+            <div class="section" id="section1">
+                <h1>Desktop High-Quality Wallpaper</h1>
+            </div>
+            <div class="section" id="section2">
+                <div class="slide" id="slide1"></div>
+                <div class="slide" id="slide2"></div>
+                <div class="slide" id="slide3"></div>
+            </div>
+            <div class="section" id="section3">
+                <div class="slide" id="slide4"></div>
+                <div class="slide" id="slide5"></div>
+                <div class="slide" id="slide6"></div>
+            </div>
+            <div class="section" id="section4">
+                <div class="slide" id="slide7"></div>
+                <div class="slide" id="slide8"></div>
+                <div class="slide" id="slide9"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

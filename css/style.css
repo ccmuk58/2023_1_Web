@@ -14,12 +14,13 @@
 	display: inline-block;
 	width: 100px;
 	line-height: 80px;
+	font-size: 20px;
 	text-align: center;
 	color: #000;
 	text-decoration: none;
 }
 #navbar>a{
-	font-size: 24px;
+	font-size: 40px;
 }
 #navbar ul {
 	list-style: none;

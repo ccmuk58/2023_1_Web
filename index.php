@@ -29,8 +29,13 @@
 				anchors:['title', 'menu', 'branch', 'info'], 
 				// 스크롤 속도 설정
 				scrollingSpeed: 700,
-				// 세로 연속 슬라이드 설정
-				continuousVertical: true,
+				// 세로 스크롤 순환 설정
+				loopTop: false,
+				loopBottom: false,
+				// 슬라이드 네비게이션 표기 설정
+				slidesNavigation: true,
+				// 가로 슬라이드 루프 설정
+				loopHorizontal: false
 			});
 		});
 	</script>
