@@ -65,7 +65,7 @@
 		<?php include('html/menu.html'); ?>
 	  </div>
 
-	  <div class="section" id="locateection">
+	  <div class="section" id="locateSection">
 		<?php include('html/locate.html'); ?>
 	  </div>
 	  
