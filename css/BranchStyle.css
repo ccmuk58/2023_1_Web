@@ -1,29 +1,43 @@
 #branchSection{
-	align-content: center;
-
 }
 
 #branchContent{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
 	background-color: #fff;
-	width: 80%;
+	height: 70vh;
+	width: 90vw;
+	padding: 10vh 10vw;
 	margin: 0 auto;
-	padding: 100px 0;
 	border-radius: 100px;
 }
-#branchTextList{
+#branchContent #infoContent{
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	text-align: left;
-	list-style: none;
-	font-size: 24px;
+	flex-direction: row;
+	height: 90vh;
 }
-#map{
-	display: inline-block;
-	width: 500px;
-	height: 500px;
+#branchContent #infoContent #map{
+	flex: 1;
 	border: 2px solid;
+}
+#branchContent #infoContent #branchInfo{
+	flex: 1;
+	border: 1px solid;
+	background-color: #fbb90d;
+}
+#branchContent #branchList{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#branchContent #branchList button{
+	flex:1;
+	height: 5vh;
+	font-size: 1.5vh;
+	background-color: #fbb90d;
+	border-radius: 0 0 16px 16px;
+	border: 1px solid;
 }
