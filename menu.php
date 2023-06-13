@@ -3,13 +3,15 @@
 
 <div class = "menubody">
     <div class = 'menubar'>
-        <h3 class = "bar">&lt;</h3>
-        <h3 onclick="showClass('burgermenu')">Burger</h3>
-        <h3 class = "bar">|</h3>
-        <h3 onclick="showClass('beveragemenu')">Beverage</h3>
-        <h3  class = "bar">|</h3>
-        <h3 onclick="showClass('snackmenu')">Snack</h3>
-        <h3 class = "bar">&gt;</h3>
+        <h3 class = "bar">&lt;&nbsp;</h3>
+        <h3 class = 'menutype highlight' id = 'burger' onclick="highlight('burger');showClass('burgermenu')">Burger</h3>
+        <h3 class = "bar">&nbsp;|&nbsp;</h3>
+        <h3 class = 'menutype' id = 'beverage' 
+        onclick="highlight('beverage'); showClass('beveragemenu')">Beverage</h3>
+        <h3 class = "bar">&nbsp;|&nbsp;</h3>
+        <h3 class = 'menutype' id = 'snack' 
+        onclick="highlight('snack'); showClass('snackmenu')">Snack</h3>
+        <h3 class = "bar">&nbsp;&gt;</h3>
     </div>
 
     <?php

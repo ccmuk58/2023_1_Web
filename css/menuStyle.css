@@ -23,10 +23,13 @@
     margin-right: 0.4vw;
 }
 
-.menubar h3:last-child{ //마지막 요소에는 마진없애기
+.menubar h3:last-child{ //마지막 요소에는 마진없애
     margin-right : 0;
 }
-.menubar h3:not(.bar):hover {
+.menubar .bar{
+    opacity: 1;
+}
+.menubar .menutype:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -87,5 +90,14 @@ img {
 }
 .hidden {
   display: none;
+}
+.menubar .highlight{
+    opacity: 1;
+    font-size:3.5vh;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color:red;
+    text-decoration-style:double;
+    
 }
 
