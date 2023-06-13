@@ -1,4 +1,67 @@
-#menuSection
-{
-	
+body {
+  background-color: #fbb90d;
+  text-align: center;
 }
+h1 {
+    text-align: center;
+    padding: 32px;
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 400px;
+  margin: 10px;
+  /*position: relative;*/
+  width: 300px;
+  border: 1px solid #999;
+}
+img {
+    width: 100%;
+    height: 400px;
+    margin-top: 0;
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    overflow: hidden;
+}
+.card-1 img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 60%;
+    opacity: 0.7;
+    transition: .3s transform ease-out;
+}
+.card-1:hover img{
+  transform: scale(1.15);
+  opacity: 1;
+}
+.card-1:hover h3 {
+    color: navy;
+    text-shadow: 1px 1px 1px darkorange;
+    border-bottom: 1px dotted gray;
+}
+.card-1 .text {
+    margin-top: 50px;
+}
+
+.cart{
+    position: fixed;
+    bottom : 10px;
+    right : 10px;
+    z-index: 9999;
+}
+.cart img{
+    width : 50px;
+    height: 50px;
+}
+.menus a {
+  font-size: 30px;
+  margin : 10px;
+}
+.hidden {
+  display: none;
+}
+

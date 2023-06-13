@@ -62,7 +62,7 @@
 	  </div>
 
 	  <div class="section" id="menuSection">
-		<?php include('html/menu.php'); ?>
+		<?php include('menu.php'); ?>
 	  </div>
 
 	  <div class="section" id="locateSection">
