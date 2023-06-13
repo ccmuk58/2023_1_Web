@@ -1,19 +1,22 @@
-body {
-  background-color: #fbb90d;
-  text-align: center;
+.menubody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 70vh;
+    width: 90vw;
+    padding 10vh 10vw;
+    margin : 0 auto;
+    border-radius: 100px;
 }
-h1 {
-    text-align: center;
-    padding: 32px;
-}
+
+
 .card {
-  background: #fff;
-  border-radius: 2px;
+  background-color: orange;
   display: inline-block;
-  height: 400px;
-  margin: 10px;
-  /*position: relative;*/
-  width: 300px;
+  height: 20vh;
+  margin: 1vh;
+  width: 20vh;
   border: 1px solid #999;
 }
 img {

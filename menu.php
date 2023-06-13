@@ -1,30 +1,24 @@
-`<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Menu</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/menuStyle.css">
-    <script src="js/menuscript.js"></script>
-</head>
-<body>
-    <div class = 'menus'>
-		<a href = "#burgermenu" onclick="showClass('burgermenu')">Burger</a>
+<link rel="stylesheet" href="css/menuStyle.css">
+<script src="js/menuscript.js"></script>
+
+<div class = "menubody">
+    <div class = 'menubar'>
+        <a href = "#burgermenu" onclick="showClass('burgermenu')">Burger</a>
         <a href = "#beveragemenu" onclick="showClass('beveragemenu')">Beverage</a>
         <a href = "#snackmenu" onclick="showClass('snackmenu')">Snack</a>
-	</div>
-    
+    </div>
+
     <?php
     include_once('dbconn.php');
     ?>
-    
-    <div id="fullpage">
-        <div class="menu hidden" id="burgermenu">
+
+    <div id="menus">
+        <div class="menu" id="burgermenu">
             <?php
             $sql = 'select * from burgermenu';
             $result = $conn -> query($sql);
             if($result->num_rows > 0) {    // 검색된 레코드가 있으면 
-                    while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열 형태로 가져옴 
+                    while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열로 가져오기 
             ?>
             <div class="card card-1">
                     <a href="addcart.php?pizza=<?=$row['name']?>
@@ -41,13 +35,13 @@
             else echo "등록된 상품이 없습니다.";
             ?>
         </div>
-        
+
         <div class="menu hidden" id="beveragemenu">
             <?php
             $sql = 'select * from beveragemenu';
             $result = $conn -> query($sql);
-            if($result->num_rows > 0) {    // 검색된 레코드가 있으면 
-                    while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열 형태로 가져옴 
+            if($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
             ?>
             <div class="card card-1">
                     <a href="addcart.php?pizza=<?=$row['name']?>
@@ -64,13 +58,13 @@
             else echo "등록된 상품이 없습니다.";
             ?>
         </div>
-        
+
         <div class="menu hidden" id="snackmenu">
             <?php
             $sql = 'select * from snackmenu';
             $result = $conn -> query($sql);
-            if($result->num_rows > 0) {    // 검색된 레코드가 있으면 
-                    while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열 형태로 가져옴 
+            if($result->num_rows > 0) {     
+                    while($row = $result->fetch_assoc()) {
             ?>
             <div class="card card-1">
                     <a href="addcart.php?pizza=<?=$row['name']?>
@@ -86,12 +80,7 @@
             else echo "등록된 상품이 없습니다.";
             ?>
         </div>
-        
-        
-        <div class = "cart">
-        <img src = "img/cartimg.jpg" alt = "Cart Img">
-        </div>
     </div>
-</body>
-    
-</html>
+</div>
+
+
