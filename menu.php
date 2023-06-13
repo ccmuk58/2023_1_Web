@@ -3,9 +3,13 @@
 
 <div class = "menubody">
     <div class = 'menubar'>
-        <a href = "#burgermenu" onclick="showClass('burgermenu')">Burger</a>
-        <a href = "#beveragemenu" onclick="showClass('beveragemenu')">Beverage</a>
-        <a href = "#snackmenu" onclick="showClass('snackmenu')">Snack</a>
+        <h3 class = "bar">&lt;</h3>
+        <h3 onclick="showClass('burgermenu')">Burger</h3>
+        <h3 class = "bar">|</h3>
+        <h3 onclick="showClass('beveragemenu')">Beverage</h3>
+        <h3  class = "bar">|</h3>
+        <h3 onclick="showClass('snackmenu')">Snack</h3>
+        <h3 class = "bar">&gt;</h3>
     </div>
 
     <?php

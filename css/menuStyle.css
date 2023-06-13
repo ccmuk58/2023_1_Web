@@ -1,20 +1,41 @@
 .menubody{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: white;
     height: 70vh;
     width: 90vw;
-    padding: 10vh 10vw;
+    padding: 0;
     margin : 0 auto;
     border-radius: 100px;
+}
+.menubar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+.menubar h3{
+    font-size: 3vh;
+    font-weight: bold;
+    font-style:italic;
+    opacity: 0.4;
+    margin-right: 0.4vw;
+}
+
+.menubar h3:last-child{ //마지막 요소에는 마진없애기
+    margin-right : 0;
+}
+.menubar h3:not(.bar):hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 
 .card {
   background-color: orange;
   display: inline-block;
-  height: 20vh;
+  height: 30vh;
   margin: 1vh;
   width: 20vh;
   border: 1px solid #999;
