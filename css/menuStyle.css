@@ -1,99 +1,70 @@
-.menubody{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    height: 70vh;
-    width: 90vw;
-    padding: 0;
-    margin : 0 auto;
-    border-radius: 100px;
-}
-.menubar{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top:2%;
-    margin-bottom: 2%;
-}
-.menubar h3{
-    font-size: 3vh;
-    font-weight: bold;
-    font-style:italic;
-    opacity: 0.4;
-    margin-right: 0.4vw;
+.menubody {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 70vh;
+  width: 90vw;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 100px;
 }
 
-.menubar h3:last-child{ //마지막 요소에는 마진없애
-    margin-right : 0;
-}
-.menubar .bar{
-    opacity: 1;
-}
-.menubar .menutype:hover {
-    opacity: 1;
-    cursor: pointer;
+/*menubar            */
+.menubar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-img{
-    height: 5vh;
-    width:5vw;
+.menubar h3 {
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.4;
+  margin-right: 0.4vw;
+  font-size: 3vh; /* 반응형 폰트 크기 추가 */
 }
 
-.menubody .card {
-  background-color: orange;
-  display: inline-block;
-  height: 10%;
-  margin: 1%;
-  width: 10%;
-  border: 1px solid #999;
+.menubar h3:last-child {
+  margin-right: 0;
 }
 
-
-.card-1 img {
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 60%;
-    opacity: 0.7;
-    transition: .3s transform ease-out;
-}
-.card-1:hover img{
-  transform: scale(1.15);
+.menubar .bar {
   opacity: 1;
 }
-.card-1:hover h3 {
-    color: navy;
-    text-shadow: 1px 1px 1px darkorange;
-    border-bottom: 1px dotted gray;
-}
-.card-1 .text {
-    margin-top: 50px;
+
+.menubar .menutype:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
-.cart{
-    position: fixed;
-    bottom : 10px;
-    right : 10px;
-    z-index: 9999;
+.menubar .highlight {
+  opacity: 1;
+  font-size: 3.5vh;
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
 }
-.cart img{
-    width : 50px;
-    height: 50px;
-}
-.menus a {
-  font-size: 30px;
-  margin : 10px;
-}
+
+/* card */
+
+
 .hidden {
   display: none;
 }
-.menubar .highlight{
-    opacity: 1;
-    font-size:3.5vh;
-    color: red;
-    text-decoration: underline;
-    text-decoration-color:red;
-    text-decoration-style:double;
-    
+
+
+/* 장바구니 버튼 우측 하단 고정 */
+.cart {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
 }
 
+.cart img {
+  width: 50px;
+  height: 50px;
+}
