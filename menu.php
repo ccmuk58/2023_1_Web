@@ -32,8 +32,8 @@
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3>Single&nbsp;&nbsp;&nbsp;<?= $row['singlemenu'] ?></h3>
-                        <h3>Set&nbsp;&nbsp;&nbsp;<?= $row['setmenu'] ?></h3>
+                        <h3>Single&nbsp;&nbsp;&nbsp;<?= $row['singlemenu'] ?>&#8361;</h3>
+                        <h3>Set&nbsp;&nbsp;&nbsp;<?= $row['setmenu'] ?>&#8361;</h3>
                     </div>
             </div>
             <?php  } 
@@ -55,8 +55,8 @@
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="text">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3><?= $row['small'] ?></h3>
-                        <h3><?= $row['large'] ?></h3>
+                        <h3><?= $row['small'] ?>&#8361;</h3>
+                        <h3><?= $row['large'] ?>&#8361;</h3>
                     </div>
             </div>
             <?php  } 
@@ -78,7 +78,7 @@
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3><?= $row['price'] ?></h3>
+                        <h3><?= $row['price'] ?>&#8361;</h3>
                     </div>
             </div>
             <?php  } 
