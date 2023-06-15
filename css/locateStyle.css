@@ -32,6 +32,17 @@
 	padding: 1vh;
 
 }
+#locateContent #descriptionList{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding:0;
+	height: 10vh;
+	align-items: center;
+}
+#locateContent li{
+	list-style: none;
+}
 #locateContent #locateList{
 	display: flex;
 	flex-direction: row;
