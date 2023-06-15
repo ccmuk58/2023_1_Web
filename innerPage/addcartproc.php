@@ -1,0 +1,23 @@
+<?php
+# 세션 시작
+session_start();
+# DB 연결
+include_once('dbconn.php');
+# 데이터 가져오기
+$menutype = $_GET['menutype'];
+$set = $_POST['set'];
+if($menutype == "burger"){
+    
+# 총합 금액
+$total = 
+# INSERT SQL 작성하고 실행
+if($conn->query($sql)){
+    echo "<script> let yesno;
+            yesno = confirm('장바구니로 이동하시겠습니까?');
+            if(yesno) location.href='showcart.php'; 
+            else location.href='index.php';
+            </script>";  // 장바구니 이동에 yes시 showcart로 이동, 아니라면 index로 이동
+}
+else echo "장바구니 등록 오류".$conn->error;
+$conn->close(); // 연결해제
+?>
