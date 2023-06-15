@@ -26,6 +26,12 @@
 	border: 1px solid;
 	background-color: #fbb90d;
 }
+#locateContent #infoContent #locateInfo img{
+	width: 20vh;
+	height: 20vh;
+	padding: 1vh;
+
+}
 #locateContent #locateList{
 	display: flex;
 	flex-direction: row;
