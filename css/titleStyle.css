@@ -1,7 +1,7 @@
 #titleSection 
 {
-	color: #db0007;
 	font-weight: bold;
+	text-shadow: rgba(255, 255, 255, 0.7) 2px 2px;
 }
 #titleSection h1
 {
@@ -14,6 +14,19 @@
 
 #titleSection #title1
 {
+	color: #db0007;
 	background-image: url(../img/temp_hamburger.jpg);
+	background-size: cover;
+}
+#titleSection #title2
+{
+	color: #fbb90d;
+	background-image: url(../img/temp_organic.jpg);
+	background-size: cover;
+}
+#titleSection #title3
+{
+	color: #00afdb;
+	background-image: url(../img/title_kitchen.jpg);
 	background-size: cover;
 }
