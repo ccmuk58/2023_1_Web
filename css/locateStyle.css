@@ -24,7 +24,7 @@
 #locateContent #infoContent #locateInfo{
 	flex: 1;
 	border: 1px solid;
-	background-color: #fbb90d;
+	background: linear-gradient(#fff,#fbb90d);
 }
 #locateContent #infoContent #locateInfo img{
 	width: 20vh;

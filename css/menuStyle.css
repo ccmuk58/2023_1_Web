@@ -1,10 +1,11 @@
 .menubody {
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
   background-color: gainsboro;
   height: 70vh;
   width: 90vw;
-  padding: 0;
+  padding: 0 3vh;
   margin: 0 auto;
   border-radius: 100px;
 }
@@ -14,8 +15,8 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top:2vw;
+  margin-bottom: 8vw;
 }
 
 .menubar h3 {
@@ -54,33 +55,44 @@
 
 .menu{
     display: flex;
-    align-items: center;
+	justify-content: space-around;
     flex-wrap: wrap;
 }
 .card{
-    width: 13%;
-    margin: 3%;
-    background-color:white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 10vw;
+	height: 20vh;
+    margin: 1vh;
     box-sizing: border-box;
-    box-shadow: 0 0 10pxx rgba(0,0,0,0.05);
     border-radius: 10px;
 }
 .card img{
-    height: auto;
     width:100%;
+    height: auto;
     border-radius: 10px;
-    margin:auto;
 }
+.foodText{
+	display: flex;
+	flex-direction: column;
+    background-color:white;
+	justify-content: space-around;
+}
+.foodText h3{
+    font-size: 1vw;
+	flex: 1;
+}
+
 .foodname{
     margin: auto;
-    padding: 2%;
+    padding: 1vw;
+	width: 100%;
     text-align: center;
-    background-color: yellow;
-    font-size: 1.5em;
+    background-color: #fbb90d;
+    font-size: 1.5vh;
     font-weight: bold;
 }
-
-
 
 
 /* 장바구니 버튼 우측 하단 고정 */
