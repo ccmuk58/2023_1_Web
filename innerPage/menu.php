@@ -24,7 +24,7 @@
                     while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열로 가져오기 
             ?>
             <div class="card">
-                    <a href="addcart.php?burger=<?=$row['name']?>
+                    <a href="innerPage/addcart.php?burger=<?=$row['name']?>
                             &singlemenu=<?=$row['singlemenu']?>&setmenu=<?=$row['setmenu']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="">
@@ -47,7 +47,7 @@
                     while($row = $result->fetch_assoc()) {
             ?>
             <div class="card">
-                    <a href="addcart.php?burger=<?=$row['name']?>
+                    <a href="innerPage/addcart.php?burger=<?=$row['name']?>
                             &small=<?=$row['small']?>&large=<?=$row['large']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="text">
@@ -70,7 +70,7 @@
                     while($row = $result->fetch_assoc()) {
             ?>
             <div class="card">
-                    <a href="addcart.php?pizza=<?=$row['name']?>
+                    <a href="innerPage/addcart.php?pizza=<?=$row['name']?>
                             &price=<?=$row['price']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="">

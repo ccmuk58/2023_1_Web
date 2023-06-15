@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="css/style.css"><!-- 네비게이션바 style.php css적용-->
-<link rel="stylesheet" href="css/addcartStyle.css"><!-- addcart.php css적용-->
+<link rel="stylesheet" href="../css/style.css"><!-- 네비게이션바 style.php css적용-->
+<link rel="stylesheet" href="../css/addcartStyle.css"><!-- addcart.php css적용-->
 
 <!-- 상단 네비게이션 바 -->
 <div id="navbar">
