@@ -45,7 +45,7 @@
 
 <body>
     <?php
-    include_once('dbconn.php');
+    include_once('./innerPage/dbconn.php');
     ?>
 	<!-- 상단 네비게이션 바 -->
 	<div id="navbar">
@@ -61,19 +61,19 @@
 	<!-- 각 본문 섹션 -->
 	<div id="fullpage">
 	  <div class="section" id="titleSection">
-		<?php include('html/title.html'); ?>
+		<?php include('./innerPage/title.html'); ?>
 	  </div>
 
 	  <div class="section" id="menuSection">
-		<?php include('menu.php'); ?>
+		<?php include('./innerPage/menu.php'); ?>
 	  </div>
 
 	  <div class="section" id="locateSection">
-		<?php include('html/locate.html'); ?>
+		<?php include('./innerPage/locate.html'); ?>
 	  </div>
 	  
 	  <div class="section" id="infoSection">
-		<?php include('html/info.html'); ?>
+		<?php include('./innerPage/info.html'); ?>
 	  </div>
 	</div>
   </body>
