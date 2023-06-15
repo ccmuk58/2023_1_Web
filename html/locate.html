@@ -4,20 +4,92 @@
 <div id="locateContent">
 	<div id="infoContent">
 		<div id="map"></div>
-		<div id="locateInfo">INFO</div>
+		<div id="locateInfo">
+			<h1>INFO</h1>
+			<img src="./img/감튀L.jpg">
+			<p>aaasdsad</p>
+		</div>
 	</div>
 	<div id="locateList">
-		<button>대진대학교 본점</button>
-		<button>태릉입구역점</button>
-		<button>망월사역점</button>
-		<button>구리역점</button>
+		<button id="b0">대진대학교 본점</button>
+		<button id="b1">태릉입구역점</button>
+		<button id="b2">망월사역점</button>
+		<button id="b3">구리역점</button>
 	</div>
 </div>
 
 <script>
-var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(37.73, 127.11),
-    zoom: 10
-});
+	let map = new naver.maps.Map('map', {
+		center: new naver.maps.LatLng(37.73, 127.11),
+		zoom: 10
+	});
+
+
+	let markerData = [
+		{
+			position: new naver.maps.LatLng(37.87409821053599, 127.15623004324677),
+			title: "대진대 본점",
+			img: "감튀L.jpg",
+			description: "주소<br>"
+				+ "영업시간<br>"
+				+ "전화번호<br"
+				+ "사이트"
+		},
+		{
+			position: new naver.maps.LatLng(37.6189198176622, 127.07556207732661),
+			title: "태릉입구역점",
+			img: "감튀L.jpg",
+			description: "주소<br>"
+				+ "영업시간<br>"
+				+ "전화번호<br"
+				+ "사이트"
+		},
+		{
+			position: new naver.maps.LatLng(37.602283737499526, 127.14295386811008),
+			title: "구리역점",
+			img: "감튀L.jpg",
+			description: "주소<br>"
+				+ "영업시간<br>"
+				+ "전화번호<br"
+				+ "사이트"
+		},
+		{
+			position: new naver.maps.LatLng(37.711363839678235, 127.04743942871902),
+			title: "망월사역점",
+			img: "감튀L.jpg",
+			description: "주소<br>"
+				+ "영업시간<br>"
+				+ "전화번호<br"
+				+ "사이트"
+		}];
+
+	const markerLenth = markerData.length;
+
+	function getMarkerClickListener(markerData, cur) {
+		return function (e) {
+			document.querySelector('#locateInfo h1').innerHTML = markerData.title;
+			document.querySelector('#locateInfo img').src = './img/' + markerData.img;
+			document.querySelector('#locateInfo p').innerHTML = markerData.description;
+			for (let i = 0; i < markerLenth; i++) {
+				document.getElementById("b" + i).style.backgroundColor = "#fbb90d";
+				document.getElementById("b" + i).style.color = "black";
+			}
+			document.getElementById("b" + cur).style.backgroundColor = "#db0007";
+			document.getElementById("b" + cur).style.color = "white";
+		};
+	}
+
+	for (let i = 0; i <markerLenth; i++) {
+		let marker = new naver.maps.Marker({
+			position: markerData[i].position,
+			map: map
+		});
+		naver.maps.Event.addListener(marker, "click", getMarkerClickListener(markerData[i], i));
+	}
+
+	for (let i = 0; i < markerLenth; i++) {
+		document.getElementById("b" + i).onclick = getMarkerClickListener(markerData[i], i);
+	}
+	document.getElementById("b" + 0).onclick();
 
 </script>
