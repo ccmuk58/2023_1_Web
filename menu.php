@@ -14,9 +14,6 @@
         <h3 class = "bar">&nbsp;&gt;</h3>
     </div>
 
-    <?php
-    include_once('dbconn.php');
-    ?>
 
     <div id="menus">
         <div class="menu" id="burgermenu">

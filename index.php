@@ -44,6 +44,9 @@
 </head>
 
 <body>
+    <?php
+    include_once('dbconn.php');
+    ?>
 	<!-- 상단 네비게이션 바 -->
 	<div id="navbar">
 	  <a href="" id="logo">Z</a>
