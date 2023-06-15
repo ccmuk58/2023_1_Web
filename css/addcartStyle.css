@@ -25,7 +25,7 @@ body {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     opacity: 0.9;
 }
 .btn:hover {
