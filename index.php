@@ -46,6 +46,17 @@
 <body>
     <?php
     include_once('./innerPage/dbconn.php');
+	session_start();
+	$login = false;
+	if (isset($_SESSION['uid'])) {
+		$email = $_SESSION['uid'];
+		$uname = $_SESSION['uname'];
+		$login = true;
+		// // 로그인한 사용자의 장바구니 담긴 물품 개수를 알아보자
+		// $sql = "select count(*) pnum from cart where email = '$email'";
+		// $result = $conn->query($sql);
+		// $row = $result->fetch_assoc();
+	}
     ?>
 	<!-- 상단 네비게이션 바 -->
 	<div id="navbar">
@@ -55,6 +66,14 @@
 		<li><a href="#menu">Menu</a></li>
 		<li><a href="#locate">Locate</a></li>
 		<li><a href="#info">Info</a></li>
+		
+		<?php 
+		$login = false;
+		if(!$login){ ?>
+		<li><a href="innerPage/login.html">Login</a></li>
+		<?php } else {?>
+		<li><a href="innerPage/showcart.php">Cart</a></li>
+		<?php } ?>
 	  </ul>
 	</div>
   
@@ -75,6 +94,7 @@
 	  <div class="section" id="infoSection">
 		<?php include('./innerPage/info.html'); ?>
 	  </div>
+	  
 	</div>
   </body>
 
