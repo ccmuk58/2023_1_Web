@@ -73,24 +73,26 @@
   <body class="text-center">
     
 <main class="form-signin w-100 m-auto">
-  <form>
-    <h3 class="mb-3 logo">Z</h3>
+  <form action = "login.php" method = "post">
+    <a href = "../index.php"><h3 class="mb-3 logo">Z</h3></a>
     <h1 class="h3 mb-3 fw-normal">Sign In Z-Burger</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" name = "email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" name = "pwd" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
     
     <button class="mb-1 w-100 btn btn-lg btn-primary" type="submit">로그인</button>
-    <button class = "w-100 btn btn-lg btn-success">회원가입</button>
+    </form>
+    <button class = "w-100 btn btn-lg btn-success"
+            onclick="location.href='register.php'">회원가입</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023 DaejinUniverse / Computer Science &amp; Engineering</p>
-  </form>
+  
 </main>
 
 
