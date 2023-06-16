@@ -71,6 +71,7 @@
 		if(!$login){ ?>
 		<li><a href="innerPage/login.html">Login</a></li>
 		<?php } else {?>
+          <li><a href = "innerPage/logout.php">Logout</a></li>
 		<li><a href="innerPage/showcart.php">Cart</a></li>
 		<?php } ?>
 	  </ul>
