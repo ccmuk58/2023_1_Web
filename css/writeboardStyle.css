@@ -1,18 +1,22 @@
 * {box-sizing: border-box}
-        body {font-family: "Lato", sans-serif; margin: 0}
+        body {
+            font-family: "Lato", sans-serif; margin: 0;
+            background-color: #fbb90d;
+        }
         /* Style the tab */
         .tab {
             float: left;
             border: 1px solid #ccc;
-            background-color: #f1f1f1;
+            background-color: #db0007;
             width: 20%;
             height: 100vh;
+            margin-top: 7vh;
         }
         /* Style the buttons inside the tab */
         .tab button {
             display: block;
             background-color: inherit;
-            color: black;
+            color: #ffd467;
             padding: 22px 16px;
             width: 100%;
             border: none;
@@ -24,7 +28,7 @@
         }
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: #ccc;
         }
         /* Create an active/current "tab button" class */
         .tab button.active {
@@ -37,6 +41,7 @@
             width: 80%;
             border-left: none;
             height: 100vh;
+            margin-top: 7vh;
         }
         
         /* Style the form */
@@ -44,16 +49,7 @@
             width: 600px;
             margin-left: auto;
             margin-right: auto;            
-        }
-        .divider {
-          margin: 0.5em 0 0.5em 0;
-          border: 0;
-          height: 1px;
-          width: 100%;
-          display: block;
-          background-color: #4f6fad;
-          background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
-        }        
+        }     
         .listform {
             width: 800px;
             margin-left: auto;
@@ -71,7 +67,7 @@
             display: inline-block;
         }
         input[type=submit] {
-            background-color: #4CAF50;
+            background-color: #db0007;
             color: white;
             padding: 12px 20px;
             border: none;
@@ -84,8 +80,9 @@
         }
         .container {
             border-radius: 5px;
-            background-color: #f2f2f2;
+            background-color: gainsboro;
             padding: 20px;
+            border-radius: 50px;
         }
         .col-25 {
             float: left;

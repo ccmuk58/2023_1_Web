@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="../css/writeboardStyle.css">
+<link rel="stylesheet" href="../css/style.css">
 
 <?php session_start(); ?>
-
+<div id="navbar">
+	  <a href="../index.php" id="logo"><p>Z<p></a>
+</div>
 <?php
 $email = $_SESSION['pz_uid'];
 $uname = $_SESSION['uname'];
@@ -16,7 +19,6 @@ $wdate = date('Y/m/d');
 <div id="newboard" class="tabcontent">
     <h2>게시글 작성</h2>
     <p>게시판에 새 글을 게시합니다.</p>
-    <div class="divider"></div> <!--아마도 중앙 절취선-->
     <div class="container">
         <form action="writeboardproc.php" method="post" enctype="multipart/form-data">
             <div class="row">
