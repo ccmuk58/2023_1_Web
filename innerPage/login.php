@@ -23,7 +23,7 @@ if(isset($recordset) && $recordset->num_rows == 1){ // isset() 만약 ()변수�
 }
 else{
     echo "<script>alert('로그인 아이디 또는 패스워드가 일치하지 않습니다.')</script>";
-    echo "<script>location.replace('signin.html')</script>";
+    echo "<script>location.replace('login.html')</script>";
 }
 
 ?>
