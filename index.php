@@ -62,18 +62,18 @@
 	<div id="navbar">
 	  <a href="index.php" id="logo">Z</a>
 	  <ul id="menu">
-		<li><a href="#title">Title</a></li>
-		<li><a href="#menu">Menu</a></li>
-		<li><a href="#locate">Locate</a></li>
-		<li><a href="#info">Info</a></li>
+		<li><a class="menuLink" href="#title">Title</a></li>
+		<li><a class="menuLink" href="#menu">Menu</a></li>
+		<li><a class="menuLink" href="#locate">Locate</a></li>
+		<li><a class="menuLink" href="#info">Info</a></li>
           
 		<?php 
 		if(!$login){ ?>
-		<li><a href="innerPage/login.html">Login</a></li>
+		<li><a class="menuIconLink" href="innerPage/login.html"><img src="./img/login.jpg"></a></li>
 		<?php } else {?>
-          <li><a href = "innerPage/logout.php">Logout</a></li>
-          <li><a href = "innerPage/account.php">Setting</a></li>
-          <li><a href="innerPage/showcart.php">Cart</a></li>
+			<li><a class="menuIconLink" href="innerPage/showcart.php"><img src="./img/cart.jpg"></a></a></li>
+			<li><a class="menuIconLink" href = "innerPage/account.php"><img src="./img/setting.jpg"></a></a></li>
+			<li><a class="menuIconLink" href = "innerPage/logout.php"><img src="./img/logout.jpg"></a></a></li>
 		<?php } ?>
 	  </ul>
 	</div>

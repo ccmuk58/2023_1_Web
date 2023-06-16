@@ -7,36 +7,53 @@
 	justify-content: space-between;
 	background-color: #ffffff;
 	z-index: 10;
-	padding: 0 6vw;
+	padding: 0 3vw;
 }
 #navbar>*{
 	position: relative;
 	align-self: center;
-}
-#navbar a{
-	display: inline-block;
-	width: 8vh;
-	font-size: 2vh;
-	text-align: center;
-	color: #000;
-	text-decoration: none;
 }
 #navbar #logo{
 	width: 10vh;
 	font-size: 5vh;
 	color: #fbb90d;
 }
+
 #navbar #menu {
 	list-style: none;
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
+#navbar .menuLink{
+	display: inline-block;
+	width: 7vh;
+	font-size: 2vh;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+#navbar .menuIconLink{
+	display: inline-block;
+	width: 5vh;
+	font-size: 2vh;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+#navbar .menuIconLink img{
+	transition: .3s  ease-out;
+	width: 2vh;
+}
+#navbar .menuIconLink:hover img{
+	transform: scale(1.15);
+}
+
 /* 네비게이션 바 애니메이션 */
-#navbar #menu a{
+#navbar #menu .menuLink{
 	position: relative;
 }
-#navbar #menu a::after {
+#navbar #menu .menuLink::after {
 	content: "";
 	position:absolute;
 	width: 0;
@@ -47,9 +64,10 @@
 	background-color: #db0007;
 	transition: all .3s ease-out;
 }
-#navbar #menu a:hover::after {
+#navbar #menu .menuLink:hover::after {
 	width: 90%;
 }
+
 /* -------- 섹션 공통 스타일 -------- */
 /* 개별 섹션 css는 협업 편의성을 위해 개별 파일로 분리 */
 .section {
