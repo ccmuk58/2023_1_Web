@@ -3,12 +3,6 @@
 
 
 <?php
-# 세션을 통해 로그인 상태 여부를 확인, 아니라면 에러 출력후 index로 돌아감
-/*session_start();
-if(!isset($_SESSION['uid'])){
-    echo "<script>alert('로그인되어있지 않습니다.')</script>";
-    echo "<script>history.go(-1)</script>";
-}*/
 
 $menutype = $_GET['menutype'];
 
@@ -30,7 +24,7 @@ $menutype = $_GET['menutype'];
                     $single = $_GET['singlemenu'];
                     $set = $_GET['setmenu'];?>
                     <div class="col-25">
-                        <?=$name;?>
+                        <?=$name?>
                         </div>
                         <div class="col-75">
                             <input type="radio" name="set" value = "single" checked>싱글(<?=$single?>)
@@ -41,22 +35,38 @@ $menutype = $_GET['menutype'];
                          <?php
                 }
                 elseif($menutype == "beverage"){
-                    $name = $_GET['name'];
+                    $name = $_GET['beverage'];
                     $small = $_GET['small'];
-                    $large = $_GET['large'];
+                    $large = $_GET['large'];?>
+                    <div class="col-25">
+                        <?=$name?>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" name="size" value = "small" checked>S(<?=$small?>)
+                            <input type="radio" name="size" value = "large">L(<?=$large?>)
+                            <input type="text" name="small" value="<?=small?>"hidden>
+                            <input type="text" name="large" value="<?=large?>"hidden>
+                         </div>
+                         <?php
                 }
                 elseif($menutype == "snack"){
-                    $name = $_GET['name'];
-                    $price = $_GET['price'];
+                    $name = $_GET['snack'];
+                    $price = $_GET['price'];?>
+                    <div class="col-25">
+                        <?=$name?>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" name="price" value = "price" checked>price(<?=$price?>)
+                            </div>
+                            <?php
                 }
 
 ?>
             </div>
 
-
-
-        <div class="row">
-            <input type="submit" value="Put In" class="btn">
+            <div class="row">
+                <input type="submit" value="Put In" class="btn">
+            </div>
         </div>
-
+    </form>
 </div>
