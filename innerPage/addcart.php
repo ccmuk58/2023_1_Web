@@ -1,7 +1,7 @@
 <html>
 <head>
-	<link rel="stylesheet" href="../css/addcartStyle.css"><!-- addcart.php css적용-->
 	<link rel="stylesheet" href="../css/style.css"><!-- 네비게이션바 style.php css적용-->
+	<link rel="stylesheet" href="../css/addcartStyle.css"><!-- addcart.php css적용-->
 	
 </head>
 
@@ -10,9 +10,7 @@
 
 	<div id="navbar">
 	  <a href="../index.php" id="logo"><p>Z<p></a>
-	  <ul id="menu">
-	</ul>
-</div>
+	</div>
 
 	<div class="cartbody">
 		<form class="container" action="addcartproc.php" method="post">
