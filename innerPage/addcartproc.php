@@ -4,13 +4,27 @@ session_start();
 # DB 연결
 include_once('dbconn.php');
 # 데이터 가져오기
+$email = $_GET['pz_uid'];
 $menutype = $_GET['menutype'];
-$set = $_POST['set'];
+$food = $_GET['name'];
+$size = $_GET['size']??'';
+$qty = $_GET['qty'];
+
 if($menutype == "burger"){
-    
+        if($size == "single") $price = $_GET['singleprice'];
+        else $price =$_GET['setprice'];
+}
+elseif($menutype == "beverage"){
+        if($size == "small") $price = $_GET['small'];
+        else $price = $_GET['large'];
+}
+elseif($menutype == "snack"){
+    $price = $_GET['price'];
+};
 # 총합 금액
-$total = 
+$total = $qty * $price;
 # INSERT SQL 작성하고 실행
+$sql = "insert into cart values('$email','$food','$size','$price','$qty','$total')";
 if($conn->query($sql)){
     echo "<script> let yesno;
             yesno = confirm('장바구니로 이동하시겠습니까?');
