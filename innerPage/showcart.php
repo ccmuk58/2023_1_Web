@@ -39,6 +39,6 @@ if(!$result)
         <?php } ?>
         </table>
         <input type="submit" value="Delete Cart" class="btn">
-    <button class="btn" onclick="location.href='ordernew.php'">Order</button>
     </form>
+    <button class="btn"  onclick="location.href='ordernew.php'">Order</button>
 </div>
