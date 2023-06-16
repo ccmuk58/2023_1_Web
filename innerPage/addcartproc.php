@@ -34,7 +34,7 @@ if ($conn->query($sql)) {
 	echo "<script> let yesno;
             yesno = confirm('장바구니로 이동하시겠습니까?');
             if(yesno) location.href='showcart.php'; 
-            else location.href='index.php';
+            else location.href='../index.php#menu';
             </script>"; // 장바구니 이동에 yes시 showcart로 이동, 아니라면 index로 이동
 } else
 	echo "장바구니 등록 오류" . $conn->error;

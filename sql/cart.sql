@@ -11,5 +11,5 @@ CREATE TABLE `cart` (
   `qty` int(2) NOT NULL,
   `price` int(11) NOT NULL,
   `total` int(11) NOT NULL,
-  PRIMARY KEY (`email`)
+  PRIMARY KEY (`email`,`food`,`size`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
