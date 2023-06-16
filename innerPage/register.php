@@ -14,7 +14,7 @@ $regdate = date('Y/m/d');
 $sql = "insert into member values('$email','$uname','$pwd', '$telno ','$regdate')";
 if($conn->query($sql)) {
     echo "<script>alert('Z-Burger에 성공적으로 가입했습니다.')</script>";
-    echo "<script>location.replace('index.php')</script>";
+    echo "<script>location.replace('../index.php')</script>";
 }
 else {
     echo "<script>alert('회원가입에 오류가 있습니다.')</script>";

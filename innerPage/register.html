@@ -12,84 +12,28 @@
 
     <!-- Bootstrap의 로그인 예시 페이지를 기반으로 한 추가 css -->
     <link rel="stylesheet" href="../css/loginStyle.css">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="registerStyle.css" rel= "stylesheet">
     </head>
-  <body class="text-center">
+
+    <body class="text-center">
     
-<main class="form-signin w-100 m-auto">
-  <form action = "../index.php" method = "post">
-    <a href = "../index.php"><h3 class="mb-3 logo">Z</h3></a>
-    <h1 class="h3 mb-3 fw-normal">Register Z-Burger</h1>
+  <main class="form-signin w-100 m-auto">
+    <form action = "register.php" method = "post">
+        <a href = "../index.php"><h3 class="mb-3 logo">Z</h3></a>
+        <h1 class="h3 mb-3 fw-normal">Register Z-Burger</h1>
 
     <div class="form-floating">
-      <input type="text" name = "email" class="form-control" id="email"  placeholder="name@example.com">
+      <input type="email" name = "email" class="form-control" id="email"  placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>
       <div class="form-floating">
       
         <div class="form-floating">
-      <input type="text" name = "uname" class="form-control" id="floatingUname" placeholder="User name">
+      <input type="uname" name = "uname" class="form-control" id="floatingUname" placeholder="User name">
       <label for="floatingUname">User name</label>
     </div>
       
       <div class="form-floating">
-      <input type="text" name = "telno" class="form-control" id="floatingTelno" placeholder="Phone Number">
+      <input type="telno" name = "telno" class="form-control" id="floatingTelno" placeholder="Phone Number">
       <label for="floatingTelno">Phone Number</label>
     </div>
           <div class = "form-floating">
@@ -97,20 +41,11 @@
       <label for="floatingPassword">Password</label>
     </div>
     
-      
-    
-
     <button class="mt-4 mb-1 w-100 btn btn-lg btn-success" type="submit">회원가입</button>
     </form>
     
     <p class="mt-5 mb-3 text-muted">&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
   
-</main>
-      
-<script>
-
-</script>
-
-    
+        </main>
   </body>
 </html>
