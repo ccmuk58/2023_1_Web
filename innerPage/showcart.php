@@ -12,7 +12,7 @@ if(!$result)
 ?>
 
 <div id="navbar">
-	<a href="" id="logo">Z</a>
+	<a href="../index.php" id="logo">Z</a>
 </div>
 <div id="container">
     <form action="removecart.php" method="post">
