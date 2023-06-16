@@ -13,5 +13,5 @@ CREATE TABLE `zorder` (
   `amount` int(11) NOT NULL,
   `delamt` int(11) NOT NULL,
   `total` int(11) NOT NULL,
- PRIMARY KEY(`email`,`food`,`size`)
+ PRIMARY KEY(`ordno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
