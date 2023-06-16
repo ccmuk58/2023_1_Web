@@ -54,7 +54,8 @@
     
     <button class="mt-4 mb-1 w-100 btn btn-lg btn-success" type="submit">변경하기</button>
     </form>
-    
+    <button class = "w-100 btn btn-lg btn-danger"
+            onclick="location.href='accountdel.php'">회원탈퇴</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
 
     </main>
