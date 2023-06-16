@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS `burger`;
 
 USE `burger`;
 
-DROP TABLE IF EXISTS `cart`;
+DROP TABLE IF EXISTS `zorder`;
 
 
 CREATE TABLE `zorder` (
