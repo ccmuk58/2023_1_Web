@@ -39,7 +39,7 @@
         <h1>Shoppingcart List</h1>
         <?php
         session_start();
-        $email = $_SESSION['uid'];
+        $email = $_SESSION['pz_uid'];
         include_once('dbconn.php');
         $sql = "select * from cart where email = '$email'";
         $result = $conn->query($sql);
