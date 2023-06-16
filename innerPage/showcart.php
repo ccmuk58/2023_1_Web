@@ -12,7 +12,7 @@ if(!$result)
 ?>
 
 <div id="navbar">
-	<a href="../index.php" id="logo">Z</a>
+	  <a href="../index.php" id="logo"><p>Z<p></a>
 </div>
 <div id="container">
     <form action="removecart.php" method="post">
@@ -39,6 +39,6 @@ if(!$result)
         <?php } ?>
         </table>
         <input type="submit" value="Delete Cart" class="btn">
-    </form>
     <button class="btn" onclick="location.href='ordernew.php'">Order</button>
+    </form>
 </div>

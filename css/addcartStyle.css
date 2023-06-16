@@ -53,3 +53,7 @@ body{
 .btn:hover {
     opacity: 1;
 }
+#navbar{
+    padding: 0;
+    margin: 0;
+}

@@ -1,27 +1,30 @@
-body {
-    text-align: center;
+body{
+	text-align: center;
+    padding: 0;
+    margin: 0;
     background-color: #fbb90d;
 }
 #container{
     position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
     top: 10vh;
 }
 #cart {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+	text-align: center;
 }
 #cart td, #cart th {
     border: 1px solid #ddd;
-    padding: 8px;
+	padding: 1vh 0;
 }
 #cart tr{background-color: #f2f2f2;}
 #cart tr:hover { background-color: #ddd;}
 #cart th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     text-align: center;
     background-color: gainsboro;
     color: #000;
@@ -29,12 +32,13 @@ body {
 .btn{
     background-color: #db0007;
     color: white;
-    padding: 16px 20px;
+    padding: 2vh;
     border: none;
     cursor: pointer;
     width: 70%;
-    opacity: 0.9;
+    opacity: 0.6;
     margin-top: 10px;
+	border-radius: 20px;
 }
 .btn:hover {
     opacity: 1;
