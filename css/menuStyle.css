@@ -24,7 +24,7 @@
   font-style: italic;
   opacity: 0.4;
   margin-right: 0.4vw;
-  font-size: 3vh; /* 반응형 폰트 크기 추가 */
+  font-size: 3vw; /* 반응형 폰트 크기 추가 */
 }
 
 .menubar h3:last-child {
@@ -42,7 +42,6 @@
 
 .menubar .highlight {
   opacity: 1;
-  font-size: 3.5vh;
   color: red;
   text-decoration: underline;
   text-decoration-color: red;
@@ -72,6 +71,10 @@
     width:100%;
     height: auto;
     border-radius: 10px;
+	transition: .3s  ease-out;
+}
+.card:hover img{
+	transform: scale(1.15);
 }
 .foodText{
 	display: flex;
