@@ -80,12 +80,9 @@
     <div class="form-floating">
       <input type="text" name = "email" class="form-control" id="email"  placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
-        <button type="button" id="chkbtn" onclick="checkEmail()">중복확인</button>
     </div>
       <div class="form-floating">
-      <input type="password" name = "pwd" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
+      
         <div class="form-floating">
       <input type="text" name = "uname" class="form-control" id="floatingUname" placeholder="User name">
       <label for="floatingUname">User name</label>
@@ -94,6 +91,10 @@
       <div class="form-floating">
       <input type="text" name = "telno" class="form-control" id="floatingTelno" placeholder="Phone Number">
       <label for="floatingTelno">Phone Number</label>
+    </div>
+          <div class = "form-floating">
+          <input type="password" name = "pwd" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
     </div>
     
       
@@ -105,31 +106,11 @@
     <p class="mt-5 mb-3 text-muted">&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
   
 </main>
- <script>
-    function checkEmail() {
-        const email = document.getElementById('email');
-        const uid = email.value; 
-        if(email.value.length == 0) {
-            alert("이메일을 입력하여야 합니다.");
-        }
-        else {
-            const xhs = new XMLHttpRequest();
-            xhs.onreadystatechange = function() {
-                if(xhs.readyState === xhs.DONE) {
-                    if(xhs.status === 200) {
-                        //alert(xhs.responseText);
-                        const result = JSON.parse(xhs.responseText);
-                        //alert(result.succ);
-                        if(result.succ === true) alert('이미 등록된 이메일입니다.');
-                        else alert('사용가능한 이메일입니다.');
-                    }
-                }
-            }
-            xhs.open('GET', 'checkemail.php?uid='+uid);
-            xhs.send();
-        }   
-    }
-  </script>
+      
+<script>
+
+</script>
+
     
   </body>
 </html>

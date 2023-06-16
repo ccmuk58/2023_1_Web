@@ -11,18 +11,14 @@ $uname = $_POST['uname'];
 $pwd = $_POST['pwd'];
 $telno = $_POST['telno'];
 $regdate = date('Y/m/d');
-$sql = "insert into member values('$email','$uname','$pwd','$telno','$regdate')";
+$sql = "insert into member values('$email','$uname','$pwd', '$telno ','$regdate')";
 if($conn->query($sql)) {
-    #echo "회원가입 성공";
-    #header('location: index.html');
-    #자바스크립트 구문 이동 처리
     echo "<script>alert('Z-Burger에 성공적으로 가입했습니다.')</script>";
-    #echo "<script>location.href='index.html'</script>";
     echo "<script>location.replace('index.php')</script>";
 }
 else {
-    #echo "회원가입 실패 : ".$conn->error;
     echo "<script>alert('회원가입에 오류가 있습니다.')</script>";
     echo "<script>location.replace('register.html')</script>";
 }
+
 ?>

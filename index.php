@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script>
-		// fullpage.js 초기 설정
+		// fullpage.js 초기 설정  
 		$(document).ready(function () {
 			$('#fullpage').fullpage({
 				// 앵커 설정
@@ -48,9 +48,9 @@
     include_once('./innerPage/dbconn.php');
 	session_start();
 	$login = false;
-	if (isset($_SESSION['uid'])) {
-		$email = $_SESSION['uid'];
-		$uname = $_SESSION['uname'];
+	if (isset($_SESSION['pz_uid'])) {
+		$email = $_SESSION['pz_uid'];
+		$uname = $_SESSION['pz_uname'];
 		$login = true;
 		// // 로그인한 사용자의 장바구니 담긴 물품 개수를 알아보자
 		// $sql = "select count(*) pnum from cart where email = '$email'";
@@ -66,9 +66,8 @@
 		<li><a href="#menu">Menu</a></li>
 		<li><a href="#locate">Locate</a></li>
 		<li><a href="#info">Info</a></li>
-		
+          
 		<?php 
-		$login = false;
 		if(!$login){ ?>
 		<li><a href="innerPage/login.html">Login</a></li>
 		<?php } else {?>
