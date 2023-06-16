@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    background-color: #fbb90d;
+}
+#container{
+    position: relative;
+    top: 10vh;
+}
+#cart {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cart td, #cart th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#cart tr{background-color: #f2f2f2;}
+#cart tr:hover { background-color: #ddd;}
+#cart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: gainsboro;
+    color: #000;
+}
+.btn{
+    background-color: #db0007;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+.btn:hover {
+    opacity: 1;
+}
+#navbar{
+    padding: 0;
+    margin: 0;
+}
