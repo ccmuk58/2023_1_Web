@@ -60,12 +60,13 @@
     ?>
 	<!-- 상단 네비게이션 바 -->
 	<div id="navbar">
-	  <a href="index.php" id="logo"><p>Z<p></a>
+	  <a href="../index.php" id="logo"><p>Z<p></a>
 	  <ul id="menu">
 		<li><a class="menuLink" href="#title">Title</a></li>
 		<li><a class="menuLink" href="#menu">Menu</a></li>
 		<li><a class="menuLink" href="#locate">Locate</a></li>
 		<li><a class="menuLink" href="#info">Info</a></li>
+		<li><a class="menuLink" href="innerPage/writeboard.php">Board</a></li>
           
 		<?php 
 		if(!$login){ ?>
