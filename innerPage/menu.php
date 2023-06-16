@@ -86,4 +86,21 @@
     </div>
 </div>
 
+<script>
+    var login = <?php echo $login ? 'true' : 'false'; ?>;
+
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!login) {
+            var links = document.querySelectorAll('.card a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].href = 'login.html';
+                links[i].addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert('비로그인 상태에서는 메뉴를 주문할 수 없습니다.');
+                });
+            }
+        }
+    });
+</script>
+
 
