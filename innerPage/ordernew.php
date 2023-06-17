@@ -23,8 +23,9 @@
         ],'-'));
         if($today == $prefix){ //오늘 날짜로 이미 주문한 내역이 존재
             $no = substr($row['maxordno'], strpos($row['maxordno'],'-')+1,2);
-        $no++;
-        $ordno = $prefix . "-" . $no;
+        $no++;  
+        if($no>1 && $no <10) $ordno = $prefix."-0".$no;
+        else $ordno = $prefix . "-" . $no;
         }
         else //오늘 첫 주문
             $ordno = $today."-01"; // 20230607-01
