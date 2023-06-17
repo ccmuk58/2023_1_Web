@@ -50,8 +50,8 @@
                     <img src="img/<?= $row['photo'] ?>"></a>
                 <div class="foodText">
                     <h3 class="foodname"><?= $row['name'] ?></h3>
-                    <h3><?= $row['small'] ?>&#8361;</h3>
-                    <h3><?= $row['large'] ?>&#8361;</h3>
+                    <h3>Small&nbsp;&nbsp;&nbsp;<?= $row['small'] ?>&#8361;</h3>
+                    <h3>Large&nbsp;&nbsp;&nbsp;<?= $row['large'] ?>&#8361;</h3>
                 </div>
             </div>
             <?php  } 

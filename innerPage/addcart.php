@@ -18,8 +18,6 @@
     <div class="cartbody">
         <form class="container" action="addcartproc.php" method="post">
             <?php
-            
-            
 					if ($menutype == "burger") {
 						$name = $_GET['burger'];
 						$single = $_GET['singlemenu'];
