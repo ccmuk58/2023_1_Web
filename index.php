@@ -72,9 +72,10 @@
 		if(!$login){ ?>
 		<li><a class="menuIconLink" href="innerPage/login.html"><img src="./img/login.jpg"></a></li>
 		<?php } else {?>
-			<li><a class="menuIconLink" href="innerPage/showcart.php"><img src="./img/cart.jpg"></a></a></li>
-			<li><a class="menuIconLink" href = "innerPage/account.php"><img src="./img/setting.jpg"></a></a></li>
-			<li><a class="menuIconLink" href = "innerPage/logout.php"><img src="./img/logout.jpg"></a></a></li>
+			<li><a class="menuIconLink" href="innerPage/showcart.php"><img src="./img/cart.jpg"></a></li>
+            <li><a class = "menuIconLink" href = "innerPage/showorder.php"><img src = "./img/showorder.png"></a></li>
+			<li><a class="menuIconLink" href = "innerPage/account.php"><img src="./img/setting.jpg"></a></li>
+			<li><a class="menuIconLink" href = "innerPage/logout.php"><img src="./img/logout.jpg"></a></li>
 		<?php } ?>
 	  </ul>
 	</div>
