@@ -15,16 +15,19 @@
 	<div class="cartbody">
 		<form class="container" action="addcartproc.php" method="post">
 					<?php
+            
+            
 					if ($menutype == "burger") {
 						$name = $_GET['burger'];
 						$single = $_GET['singlemenu'];
-						$set = $_GET['setmenu']; ?>
-
+						$set = $_GET['setmenu']; 
+                        $photo = $_GET['photo'];  ?>
+                        
 						<div class="row" id="menutitle">
 							<?= $name ?>
 						</div>
 						<div class="row" id="menuimg">
-							<img src='../img/<?= trim($name) ?>.jpg'>
+							<img src='../img/<?=$photo?>'>
 						</div>
 						<div class="row"  id="menuoption">
 							<input type="radio" name="size" value="single" checked>싱글(<?= $single ?>)<input type="radio" name="size" value="set">세트(<?= $set ?>)<input type="text" name="singleprice" value="<?= $single ?>" hidden>
@@ -38,12 +41,14 @@
 					} elseif ($menutype == "beverage") {
 						$name = $_GET['beverage'];
 						$small = $_GET['small'];
-						$large = $_GET['large']; ?>
+						$large = $_GET['large'];
+                        $photo = $_GET['photo']?>
+            
 						<div class="row" id="menutitle">
 							<?= $name ?>
 						</div>
 						<div class="row" id="menuimg">
-							<img src='../img/<?= trim($name) ?>.jpg'>
+							<img src='../img/<?= $photo ?>'>
 						</div>
 						<div class="row" id="menuoption">
 							<input type="radio" name="size" value="small" checked>S(<?= $small ?>)
@@ -58,12 +63,14 @@
 				<?php
 					} elseif ($menutype == "snack") {
 						$name = $_GET['snack'];
-						$price = $_GET['price']; ?>
+						$price = $_GET['price']; 
+                        $photo = $_GET['photo']; ?>
+
 						<div class="row" id="menutitle">
 							<?= $name ?>
 						</div>
 						<div class="row" id="menuimg">
-							<img src='../img/<?= trim($name) ?>.jpg'>
+							<img src='../img/<?= $photo ?>'>
 						</div>
 						<div class="row" id="menuoption">
 							<input type="radio" name="price" value="<?= $price ?>" checked>가격(<?= $price ?>)

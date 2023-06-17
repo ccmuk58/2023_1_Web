@@ -25,7 +25,7 @@
             ?>
             <div class="card">
                     <a href="innerPage/addcart.php?menutype=burger&burger=<?=$row['name']?>
-                            &singlemenu=<?=$row['singlemenu']?>&setmenu=<?=$row['setmenu']?>">
+                            &singlemenu=<?=$row['singlemenu']?>&setmenu=<?=$row['setmenu']?>&photo=<?=$row['photo']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="foodText">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
@@ -48,7 +48,7 @@
             ?>
             <div class="card">
                     <a href="innerPage/addcart.php?menutype=beverage&beverage=<?=$row['name']?>
-                            &small=<?=$row['small']?>&large=<?=$row['large']?>">
+                            &small=<?=$row['small']?>&large=<?=$row['large']?>&photo=<?=$row['photo']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="foodText">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
@@ -71,7 +71,7 @@
             ?>
             <div class="card">
                     <a href="innerPage/addcart.php?menutype=snack&snack=<?=$row['name']?>
-                            &price=<?=$row['price']?>">
+                            &price=<?=$row['price']?>&photo=<?=$row['photo']?>">
                             <img src="img/<?= $row['photo'] ?>"></a>
                     <div class="foodText">
                         <h3 class = "foodname"><?= $row['name'] ?></h3>
