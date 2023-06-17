@@ -72,8 +72,8 @@
             <td><?=$row['pizzaname']?></td>
             <td><?=$row['size']?></td>
             <td><?=$row['qty']?></td>
-            <td><?=($row['price'] / $row['qty'])?></td>
             <td><?=$row['price']?></td>
+            <td><?=($row['price'])*($row['qty'])?></td>
         </tr>
         <?php } // while() ?>
     <?php } ?>
