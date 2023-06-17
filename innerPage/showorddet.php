@@ -29,7 +29,7 @@
     <table id="list">
         <tr>
             <th>No</th>
-            <th>피자</th>
+            <th>메뉴</th>
             <th>사이즈</th>
             <th>수량</th>
             <th>가격</th>
@@ -40,7 +40,7 @@
     ?>
         <tr>
             <td><?=$row['seq']?></td>
-            <td><?=$row['pizzaname']?></td>
+            <td><?=$row['food']?></td>
             <td><?=$row['size']?></td>
             <td><?=$row['qty']?></td>
             <td><?=$row['price']?></td>

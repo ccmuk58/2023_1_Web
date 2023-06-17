@@ -51,7 +51,7 @@ h1{
 
 #list tr:nth-child(odd) {
     color: white;
-    background-color: #908059;
+    background-color: #6f7fa6;
 }
 
 #list tr:nth-child(odd) a {
@@ -66,7 +66,7 @@ h1{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #5c5c5c;
+    background-color: #4ccd97;
     color: white;
 }
 

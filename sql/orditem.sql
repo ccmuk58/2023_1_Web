@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS `orditem`;
 CREATE TABLE `orditem` (
   `ordno` varchar(20) NOT NULL,
   `seq` int(2) NOT NULL,
-  `pizzaname` varchar(20) NOT NULL,
+  `food` varchar(20) NOT NULL,
   `size` char(1) NOT NULL,
   `qty` int(3) NOT NULL,
   `price` int(11) NOT NULL,

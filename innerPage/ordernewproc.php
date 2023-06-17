@@ -1,5 +1,5 @@
 <?php
-# porder 테이블에 신규주문 내역 저장한 다음 orditem 테이블에 주문하는 피자를 저장하기
+# porder 테이블에 신규주문 내역 저장한 다음 orditem 테이블에 주문하는 메뉴를 저장하기
 # 마스터 테이블에 먼저 레코드 추가하고 디테일 테이블에 레코드 추가하기
 include_once('dbconn.php');
 #ordernew.php에서 전달되는 데이터 가져오기
