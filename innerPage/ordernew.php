@@ -29,64 +29,69 @@
         }
         else //오늘 첫 주문
             $ordno = $today."-01"; // 20230607-01
-        #장바구니에 담긴 피자들의 총 가격을 가져오기
+        #장바구니에 담긴 음식들의 총 가격을 가져오기
         $sql = "select sum(total) amount from cart where email = '$email'";
         $result = $conn -> query($sql); //select 실행 결과는 1건 나옴
         $row = $result -> fetch_assoc();
         $amount = $row['amount']; //sum(price) 결과 값을 가져옴        
         ?>
-        
-        <h2>Z-Burger Order</h2>
-        <p>장바구니에 담긴 피자 배달 주문합니다.</p>
-        <hr>
-        <div class="container">
-          <form action="ordernewproc.php" method="post">
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">주문자</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="uname" value="<?=$uname?>" readonly>
-				        <input type="text" name="email" value="<?=$email?>" hidden>
-              </div>
+        <div class= 'maincontain'>
+            <div class= 'logobox'>
+            <a href = "../index.php" class = 'logo'>Z</a>
             </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">주문번호</label>
-              </div>
-              <div class= "col-75">
-                <input type="text" name="ordno" value="<?=$ordno?>" readonly>
-              </div>
+            <h2>Z-Burger Order</h2>
+            <p>장바구니에 담긴 메뉴를 주문합니다</p>
+            <hr>
+            <div class="container">
+              <form action="ordernewproc.php" method="post">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">주문자</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="uname" value="<?=$uname?>" readonly>
+                            <input type="text" name="email" value="<?=$email?>" hidden>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">주문번호</label>
+                  </div>
+                  <div class= "col-75">
+                    <input type="text" name="ordno" value="<?=$ordno?>" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">배달주소</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="address" placeholder="Address..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">주문금액</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="amount" value="<?=$amount?>" readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">배달료</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" name="delamt" value=5000 readonly>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="주문하기">
+                </div>
+              </form>
             </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">배달주소</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="address" placeholder="Address..">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">주문금액</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="amount" value="<?=$amount?>" readonly>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">배달료</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="delamt" value=5000 readonly>
-              </div>
-            </div>
-		    <div class="row">
-              <input type="submit" value="배달하기">
-            </div>
-		  </form>
-		</div>
+            <p>&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
+        </div>
 	</body>
 </html>
 

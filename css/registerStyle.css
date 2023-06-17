@@ -8,7 +8,11 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #fbb90d;
+  background-image: url('../img/temp_hamburger.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*이미지를 브라우저 창에 고정*/
 }
 
 .logo {
@@ -19,11 +23,13 @@ body {
   height: 80px; /* Adjust the height to increase the logo size */
   width: 80px; /* Adjust the width to increase the logo size */
 }
+.h3{
+    color:white;
+}
 
 .form-signin {
   max-width: 330px;
   padding: 15px;
-
 }
 
 .form-signin .form-floating:focus-within {
@@ -31,22 +37,19 @@ body {
 }
 
 .form-signin input[type="email"] {
+  margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 .form-signin input[type="uname"] {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  margin-bottom: -1px;
+  border-radius: 0;
+}.form-signin input[type="telno"] {
+  margin-bottom: -1px;
+  border-radius: 0;
 }
-.form-signin input[type="pwd"] {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="telno"] {
+.form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-    
-

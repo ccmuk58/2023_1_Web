@@ -60,6 +60,6 @@ if(!$conn->query($sql)){
 #모든 연산이 수행되었으므로 최종 확정하기
 $conn -> commit();
 $conn -> autocommit(true); #반드시 autocommit을 설정하여야 함.
-echo "<script>alert('피자 배달 주문이 정상적으로 생성되었습니다.');";
+echo "<script>alert('음식 배달 주문이 정상적으로 생성되었습니다.');";
 echo "location.href = '../index.php'</script>";
 ?>
