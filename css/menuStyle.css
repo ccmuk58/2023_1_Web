@@ -1,96 +1,104 @@
 .menubody {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  background-color: gainsboro;
-  height: 70vh;
-  width: 90vw;
-  padding: 0 3vh;
-  margin: 0 auto;
-  border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: gainsboro;
+    height: 70vh;
+    width: 90vw;
+    padding: 0 3vh;
+    margin: 0 auto;
+    border-radius: 100px;
 }
 
 /*menubar            */
 .menubar {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-top:2vw;
-  margin-bottom: 8vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
 }
 
 .menubar h3 {
-  font-weight: bold;
-  font-style: italic;
-  opacity: 0.4;
-  margin-right: 0.4vw;
-  font-size: 3vw; /* 반응형 폰트 크기 추가 */
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.4;
+    margin-right: 0.4vw;
+    font-size: 3vw;
+    /* 반응형 폰트 크기 추가 */
 }
 
 .menubar h3:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .menubar .bar {
-  opacity: 1;
+    opacity: 1;
 }
 
 .menubar .menutype:hover {
-  opacity: 1;
-  cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .menubar .highlight {
-  opacity: 1;
-  color: red;
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-style: double;
+    opacity: 1;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
 }
+
 .hidden {
-  display: none;
+    display: none;
 }
+
 /* card */
 
-.menu{
+.menu {
     display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-.card{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 10vw;
-	height: 20vh;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10vw;
+    height: 20vh;
     margin: 1vh;
     box-sizing: border-box;
     border-radius: 10px;
 }
-.card img{
-    width:100%;
+
+.card img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
-	transition: .3s  ease-out;
-}
-.card:hover img{
-	transform: scale(1.15);
-}
-.foodText{
-	display: flex;
-	flex-direction: column;
-    background-color:white;
-	justify-content: space-around;
-}
-.foodText h3{
-    font-size: 1vw;
-	flex: 1;
+    transition: .3s ease-out;
 }
 
-.foodname{
+.card:hover img {
+    transform: scale(1.15);
+}
+
+.foodText {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.foodText h3 {
+    font-size: 1vw;
+    flex: 1;
+}
+
+.foodname {
     margin: auto;
     padding: 1vw;
-	width: 100%;
+    width: 100%;
     text-align: center;
     background-color: #fbb90d;
     font-size: 1.5vh;
@@ -100,13 +108,13 @@
 
 /* 장바구니 버튼 우측 하단 고정 */
 .cart {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 9999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
 }
 
 .cart img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }

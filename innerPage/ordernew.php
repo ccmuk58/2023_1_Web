@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>Z-Burger Delivery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/ordernewStyle.css">
-    </head>
-    <body>
-        <?php
+</head>
+
+<body>
+    <?php
         session_start();
         include_once('dbconn.php');
         $uname = $_SESSION['pz_uname'];
@@ -35,65 +37,63 @@
         $row = $result -> fetch_assoc();
         $amount = $row['amount']; //sum(price) 결과 값을 가져옴        
         ?>
-        <div class= 'maincontain'>
-            <div class= 'logobox'>
-            <a href = "../index.php" class = 'logo'>Z</a>
-            </div>
-            <h2>Z-Burger Order</h2>
-            <p>장바구니에 담긴 메뉴를 주문합니다</p>
-            <hr>
-            <div class="container">
-              <form action="ordernewproc.php" method="post">
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">주문자</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" name="uname" value="<?=$uname?>" readonly>
-                            <input type="text" name="email" value="<?=$email?>" hidden>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">주문번호</label>
-                  </div>
-                  <div class= "col-75">
-                    <input type="text" name="ordno" value="<?=$ordno?>" readonly>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">배달주소</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" name="address" placeholder="Address..">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">주문금액</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" name="amount" value="<?=$amount?>" readonly>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label for="fname">배달료</label>
-                  </div>
-                  <div class="col-75">
-                    <input type="text" name="delamt" value=5000 readonly>
-                  </div>
-                </div>
-                <div class="row">
-                  <input type="submit" value="주문하기">
-                </div>
-              </form>
-            </div>
-            <p>&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
+    <div class='maincontain'>
+        <div class='logobox'>
+            <a href="../index.php" class='logo'>Z</a>
         </div>
-	</body>
+        <h2>Z-Burger Order</h2>
+        <p>장바구니에 담긴 메뉴를 주문합니다</p>
+        <hr>
+        <div class="container">
+            <form action="ordernewproc.php" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">주문자</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="uname" value="<?=$uname?>" readonly>
+                        <input type="text" name="email" value="<?=$email?>" hidden>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">주문번호</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="ordno" value="<?=$ordno?>" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">배달주소</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="address" placeholder="Address..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">주문금액</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="amount" value="<?=$amount?>" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">배달료</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="delamt" value=5000 readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="주문하기">
+                </div>
+            </form>
+        </div>
+        <p>&copy; 2023 Daejin University / Computer Science &amp; Engineering</p>
+    </div>
+</body>
+
 </html>
-
-
-

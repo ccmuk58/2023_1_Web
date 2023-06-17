@@ -48,7 +48,7 @@
         <?php } // while() ?>
     </table>
     <?php } // if() ?>
-    <p class = "copyright">&copy; 2023 Daejin Universe / Computer Science &amp; Engineering</p>
+    <p class="copyright">&copy; 2023 Daejin University / Computer Science &amp; Engineering</p>
 </body>
 
 </html>

@@ -12,31 +12,37 @@ if(!$result)
 ?>
 
 <div id="navbar">
-	  <a href="../index.php" id="logo"><p>Z<p></a>
+    <a href="../index.php" id="logo">
+        <p>Z<p>
+    </a>
 </div>
 <div id="container">
     <form action="removecart.php" method="post">
         <table id="cart">
             <tr>
-                <th></th><th>NO</th><th>Menu</th><th>Size</th><th>Quantity</th><th>Price</th>
+                <th></th>
+                <th>NO</th>
+                <th>Menu</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Price</th>
             </tr>
-        <?php
+            <?php
             $no = 0;
             while($row = $result->fetch_assoc()){
                 $no++;
                 ?>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="chk[]"
-                        value="<?=$row['food']?>@<?=$row['size']?>">
-                    </td>
-                    <td><?=$no?></td>
-                    <td><?=$row['food']?></td>
-                    <td><?=$row['size']?></td>
-                    <td><?=$row['qty']?></td>
-                    <td><?=$row['total']?></td>
-                </tr>
-        <?php } ?>
+            <tr>
+                <td>
+                    <input type="checkbox" name="chk[]" value="<?=$row['food']?>@<?=$row['size']?>">
+                </td>
+                <td><?=$no?></td>
+                <td><?=$row['food']?></td>
+                <td><?=$row['size']?></td>
+                <td><?=$row['qty']?></td>
+                <td><?=$row['total']?></td>
+            </tr>
+            <?php } ?>
         </table>
         <input type="submit" value="Delete Cart" class="btn">
     </form>

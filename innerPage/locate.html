@@ -2,96 +2,95 @@
 
 
 <div id="locateContent">
-	<div id="infoContent">
-		<div id="map"></div>
-		<div id="locateInfo">
-			<h1>INFO</h1>
-			<img src="./img/감튀L.jpg">
-			<ul id="descriptionList">
-				<li id="d0"></li>
-				<li id="d1"></li>
-				<li id="d2"></li>
-			</ul>
-		</div>
-	</div>
-	<div id="locateList">
-		<button id="b0">대진대학교 본점</button>
-		<button id="b1">태릉입구역점</button>
-		<button id="b2">구리역점</button>
-		<button id="b3">망월사역점</button>
-	</div>
+    <div id="infoContent">
+        <div id="map"></div>
+        <div id="locateInfo">
+            <h1>INFO</h1>
+            <img src="./img/감튀L.jpg">
+            <ul id="descriptionList">
+                <li id="d0"></li>
+                <li id="d1"></li>
+                <li id="d2"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="locateList">
+        <button id="b0">대진대학교 본점</button>
+        <button id="b1">태릉입구역점</button>
+        <button id="b2">구리역점</button>
+        <button id="b3">망월사역점</button>
+    </div>
 </div>
 
 <script>
-	let map = new naver.maps.Map('map', {
-		center: new naver.maps.LatLng(37.73, 127.11),
-		zoom: 10
-	});
+    let map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.73, 127.11),
+        zoom: 10
+    });
 
 
-	let markerData = [
-		{
-			position: new naver.maps.LatLng(37.87409821053599, 127.15623004324677),
-			title: "대진대 본점",
-			img: "daejin.jpg",
-			adress: "경기 포천시 호국로 1007<br>",
-			time: "09:00 - 19:00<br>",
-			number: "031-000-0000<br"
-		},
-		{
-			position: new naver.maps.LatLng(37.6189198176622, 127.07556207732661),
-			title: "태릉입구역점",
-			img: "taereung.jpg",
-			adress: "서울 노원구 동일로 996<br>",
-			time: "09:00 - 22:30<br>",
-			number: "02-000-0000<br"
-		},
-		{
-			position: new naver.maps.LatLng(37.602283737499526, 127.14295386811008),
-			title: "구리역점",
-			img: "guri.jpg",
-			adress: "경기 구리시 경춘로 249<br>",
-			time: "09:00 - 21:00<br>",
-			number: "031-111-1111<br"
-		},
-		{
-			position: new naver.maps.LatLng(37.711363839678235, 127.04743942871902),
-			title: "망월사역점",
-			img: "mangwol.jpg",
-			adress: "경기 의정부시 평화로 221<br>",
-			time: "09:00 - 21:00<br>",
-			number: "031-222-2222<br"
-		}];
+    let markerData = [{
+            position: new naver.maps.LatLng(37.87409821053599, 127.15623004324677),
+            title: "대진대 본점",
+            img: "daejin.jpg",
+            adress: "경기 포천시 호국로 1007<br>",
+            time: "09:00 - 19:00<br>",
+            number: "031-000-0000<br"
+        },
+        {
+            position: new naver.maps.LatLng(37.6189198176622, 127.07556207732661),
+            title: "태릉입구역점",
+            img: "taereung.jpg",
+            adress: "서울 노원구 동일로 996<br>",
+            time: "09:00 - 22:30<br>",
+            number: "02-000-0000<br"
+        },
+        {
+            position: new naver.maps.LatLng(37.602283737499526, 127.14295386811008),
+            title: "구리역점",
+            img: "guri.jpg",
+            adress: "경기 구리시 경춘로 249<br>",
+            time: "09:00 - 21:00<br>",
+            number: "031-111-1111<br"
+        },
+        {
+            position: new naver.maps.LatLng(37.711363839678235, 127.04743942871902),
+            title: "망월사역점",
+            img: "mangwol.jpg",
+            adress: "경기 의정부시 평화로 221<br>",
+            time: "09:00 - 21:00<br>",
+            number: "031-222-2222<br"
+        }
+    ];
 
-	const markerLenth = markerData.length;
+    const markerLenth = markerData.length;
 
-	function getMarkerClickListener(markerData, cur) {
-		return function (e) {
-			document.querySelector('#locateInfo h1').innerHTML = markerData.title;
-			document.querySelector('#locateInfo img').src = './img/' + markerData.img;
-			document.querySelector('#locateInfo #d0').innerHTML = "주소 : " +markerData.adress;
-			document.querySelector('#locateInfo #d1').innerHTML = "영업시간 : " +markerData.time;
-			document.querySelector('#locateInfo #d2').innerHTML ="전화번호 : " + markerData.number;
-			for (let i = 0; i < markerLenth; i++) {
-				document.getElementById("b" + i).style.backgroundColor = "#fbb90d";
-				document.getElementById("b" + i).style.color = "black";
-			}
-			document.getElementById("b" + cur).style.backgroundColor = "#db0007";
-			document.getElementById("b" + cur).style.color = "white";
-		};
-	}
+    function getMarkerClickListener(markerData, cur) {
+        return function(e) {
+            document.querySelector('#locateInfo h1').innerHTML = markerData.title;
+            document.querySelector('#locateInfo img').src = './img/' + markerData.img;
+            document.querySelector('#locateInfo #d0').innerHTML = "주소 : " + markerData.adress;
+            document.querySelector('#locateInfo #d1').innerHTML = "영업시간 : " + markerData.time;
+            document.querySelector('#locateInfo #d2').innerHTML = "전화번호 : " + markerData.number;
+            for (let i = 0; i < markerLenth; i++) {
+                document.getElementById("b" + i).style.backgroundColor = "#fbb90d";
+                document.getElementById("b" + i).style.color = "black";
+            }
+            document.getElementById("b" + cur).style.backgroundColor = "#db0007";
+            document.getElementById("b" + cur).style.color = "white";
+        };
+    }
 
-	for (let i = 0; i <markerLenth; i++) {
-		let marker = new naver.maps.Marker({
-			position: markerData[i].position,
-			map: map
-		});
-		naver.maps.Event.addListener(marker, "click", getMarkerClickListener(markerData[i], i));
-	}
+    for (let i = 0; i < markerLenth; i++) {
+        let marker = new naver.maps.Marker({
+            position: markerData[i].position,
+            map: map
+        });
+        naver.maps.Event.addListener(marker, "click", getMarkerClickListener(markerData[i], i));
+    }
 
-	for (let i = 0; i < markerLenth; i++) {
-		document.getElementById("b" + i).onclick = getMarkerClickListener(markerData[i], i);
-	}
-	document.getElementById("b" + 0).onclick();
-
+    for (let i = 0; i < markerLenth; i++) {
+        document.getElementById("b" + i).onclick = getMarkerClickListener(markerData[i], i);
+    }
+    document.getElementById("b" + 0).onclick();
 </script>

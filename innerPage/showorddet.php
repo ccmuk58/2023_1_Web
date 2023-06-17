@@ -49,6 +49,7 @@
         <?php } // while() ?>
         <?php } ?>
     </table>
+    <p class="copyright">&copy; 2023 Daejin University / Computer Science &amp; Engineering</p>
 </body>
 
 </html>

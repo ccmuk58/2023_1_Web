@@ -1,49 +1,54 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: url('../img/temp_hamburger.jpg');
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('../img/temp_hamburger.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /*이미지를 브라우저 창에 고정*/
+    background-attachment: fixed;
+    /*이미지를 브라우저 창에 고정*/
 }
 
 .logo {
-  display : inline-block;
-  background-color: #db0007;
-  color: #fbb90d;
-  font-size: 70px; /* Adjust the font size to increase the logo size */
-  height: 80px; /* Adjust the height to increase the logo size */
-  width: 80px; /* Adjust the width to increase the logo size */
+    display: inline-block;
+    background-color: #db0007;
+    color: #fbb90d;
+    font-size: 70px;
+    /* Adjust the font size to increase the logo size */
+    height: 80px;
+    /* Adjust the height to increase the logo size */
+    width: 80px;
+    /* Adjust the width to increase the logo size */
 }
-.h3{
-    color:white;
+
+.h3 {
+    color: white;
 }
 
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
+    max-width: 330px;
+    padding: 15px;
 }
 
 .form-signin .form-floating:focus-within {
-  z-index: 2;
+    z-index: 2;
 }
 
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }

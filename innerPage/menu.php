@@ -1,17 +1,15 @@
 <link rel="stylesheet" href="css/menuStyle.css">
 <script src="js/menuscript.js"></script>
 
-<div class = "menubody">
-    <div class = 'menubar'>
-        <h3 class = "bar">&lt;&nbsp;</h3>
-        <h3 class = 'menutype highlight' id = 'burger' onclick="highlight('burger');showClass('burgermenu')">Burger</h3>
-        <h3 class = "bar">&nbsp;|&nbsp;</h3>
-        <h3 class = 'menutype' id = 'beverage' 
-        onclick="highlight('beverage'); showClass('beveragemenu')">Beverage</h3>
-        <h3 class = "bar">&nbsp;|&nbsp;</h3>
-        <h3 class = 'menutype' id = 'snack' 
-        onclick="highlight('snack'); showClass('snackmenu')">Snack</h3>
-        <h3 class = "bar">&nbsp;&gt;</h3>
+<div class="menubody">
+    <div class='menubar'>
+        <h3 class="bar">&lt;&nbsp;</h3>
+        <h3 class='menutype highlight' id='burger' onclick="highlight('burger');showClass('burgermenu')">Burger</h3>
+        <h3 class="bar">&nbsp;|&nbsp;</h3>
+        <h3 class='menutype' id='beverage' onclick="highlight('beverage'); showClass('beveragemenu')">Beverage</h3>
+        <h3 class="bar">&nbsp;|&nbsp;</h3>
+        <h3 class='menutype' id='snack' onclick="highlight('snack'); showClass('snackmenu')">Snack</h3>
+        <h3 class="bar">&nbsp;&gt;</h3>
     </div>
 
 
@@ -24,14 +22,14 @@
                     while($row = $result->fetch_assoc()) {  // 레코드 한 개를 연관배열로 가져오기 
             ?>
             <div class="card">
-                    <a href="innerPage/addcart.php?menutype=burger&burger=<?=$row['name']?>
+                <a href="innerPage/addcart.php?menutype=burger&burger=<?=$row['name']?>
                             &singlemenu=<?=$row['singlemenu']?>&setmenu=<?=$row['setmenu']?>&photo=<?=$row['photo']?>">
-                            <img src="img/<?= $row['photo'] ?>"></a>
-                    <div class="foodText">
-                        <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3>Single&nbsp;&nbsp;&nbsp;<?= $row['singlemenu'] ?>&#8361;</h3>
-                        <h3>Set&nbsp;&nbsp;&nbsp;<?= $row['setmenu'] ?>&#8361;</h3>
-                    </div>
+                    <img src="img/<?= $row['photo'] ?>"></a>
+                <div class="foodText">
+                    <h3 class="foodname"><?= $row['name'] ?></h3>
+                    <h3>Single&nbsp;&nbsp;&nbsp;<?= $row['singlemenu'] ?>&#8361;</h3>
+                    <h3>Set&nbsp;&nbsp;&nbsp;<?= $row['setmenu'] ?>&#8361;</h3>
+                </div>
             </div>
             <?php  } 
             }
@@ -47,14 +45,14 @@
                     while($row = $result->fetch_assoc()) {
             ?>
             <div class="card">
-                    <a href="innerPage/addcart.php?menutype=beverage&beverage=<?=$row['name']?>
+                <a href="innerPage/addcart.php?menutype=beverage&beverage=<?=$row['name']?>
                             &small=<?=$row['small']?>&large=<?=$row['large']?>&photo=<?=$row['photo']?>">
-                            <img src="img/<?= $row['photo'] ?>"></a>
-                    <div class="foodText">
-                        <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3><?= $row['small'] ?>&#8361;</h3>
-                        <h3><?= $row['large'] ?>&#8361;</h3>
-                    </div>
+                    <img src="img/<?= $row['photo'] ?>"></a>
+                <div class="foodText">
+                    <h3 class="foodname"><?= $row['name'] ?></h3>
+                    <h3><?= $row['small'] ?>&#8361;</h3>
+                    <h3><?= $row['large'] ?>&#8361;</h3>
+                </div>
             </div>
             <?php  } 
             }
@@ -70,13 +68,13 @@
                     while($row = $result->fetch_assoc()) {
             ?>
             <div class="card">
-                    <a href="innerPage/addcart.php?menutype=snack&snack=<?=$row['name']?>
+                <a href="innerPage/addcart.php?menutype=snack&snack=<?=$row['name']?>
                             &price=<?=$row['price']?>&photo=<?=$row['photo']?>">
-                            <img src="img/<?= $row['photo'] ?>"></a>
-                    <div class="foodText">
-                        <h3 class = "foodname"><?= $row['name'] ?></h3>
-                        <h3><?= $row['price'] ?>&#8361;</h3>
-                    </div>
+                    <img src="img/<?= $row['photo'] ?>"></a>
+                <div class="foodText">
+                    <h3 class="foodname"><?= $row['name'] ?></h3>
+                    <h3><?= $row['price'] ?>&#8361;</h3>
+                </div>
             </div>
             <?php  } 
             }
@@ -102,5 +100,3 @@
         }
     });
 </script>
-
-

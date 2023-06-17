@@ -11,12 +11,12 @@ function showClass(className) {
 
 
 
-function highlight(menu){
+function highlight(menu) {
     var menus = document.getElementsByClassName('menutype');
-    for(var j=0 ; j<menus.length ; j++){
+    for (var j = 0; j < menus.length; j++) {
         menus[j].classList.remove('highlight');
     }
-    
+
     var highlightype = document.getElementById(menu);
     highlightype.classList.add('highlight');
 }
