@@ -13,7 +13,16 @@
         <a href="../index.php" class='logo'>Z</a>
     </div>
     <h1>주문내역</h1>
-    <?php
+    <table id="list">
+        <tr>
+            <th>주문번호</th>
+            <th>주문일자</th>
+            <th>주소</th>
+            <th>주문금액</th>
+            <th>배달료</th>
+            <th>결제금액</th>
+        </tr>
+        <?php
     # porder 테이블에서 레코드 검색하고 출력하기
     session_start();
     $email = $_SESSION['pz_uid'];
@@ -25,15 +34,7 @@
     if($result->num_rows > 0) {
         $no = 1;
     ?>
-    <table id="list">
-        <tr>
-            <th>주문번호</th>
-            <th>주문일자</th>
-            <th>주소</th>
-            <th>주문금액</th>
-            <th>배달료</th>
-            <th>결제금액</th>
-        </tr>
+
         <?php
         while($row = $result->fetch_assoc()) {
     ?>
@@ -46,8 +47,9 @@
             <td><?=$row['total']?></td>
         </tr>
         <?php } // while() ?>
+        <?php } // if() ?>
     </table>
-    <?php } // if() ?>
+
     <p class="copyright">&copy; 2023 Daejin University / Computer Science &amp; Engineering</p>
 </body>
 
