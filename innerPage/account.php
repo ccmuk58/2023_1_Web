@@ -19,8 +19,8 @@
     <?php
     session_start();
     include_once('dbconn.php');
-    $uname = $_SESSION['pz_uname'];
-    $email = $_SESSION['pz_uid'];
+    $uname = $_SESSION['z_uname'];
+    $email = $_SESSION['z_uid'];
     ?>
     <main class="form-signin w-100 m-auto">
         <form action="accountproc.php" method="post">

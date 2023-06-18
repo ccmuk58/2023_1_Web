@@ -25,7 +25,7 @@
         <?php
     # porder 테이블에서 레코드 검색하고 출력하기
     session_start();
-    $email = $_SESSION['pz_uid'];
+    $email = $_SESSION['z_uid'];
     include_once('dbconn.php');
     # 주문날짜의 내림차순으로 정렬해서 검색
     $sql = "select * from zorder where email = '$email' order by orddate desc";

@@ -4,7 +4,7 @@ session_start();
 # DB 연결
 include_once('dbconn.php');
 # 데이터 가져오기
-$email = $_SESSION['pz_uid'];
+$email = $_SESSION['z_uid'];
 $menutype = $_POST['menutype'];
 $food = $_POST['name'];
 $size = $_POST['size'] ?? '';

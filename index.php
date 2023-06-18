@@ -48,9 +48,9 @@
     include_once('./innerPage/dbconn.php');
 	session_start();
 	$login = false;
-	if (isset($_SESSION['pz_uid'])) {
-		$email = $_SESSION['pz_uid'];
-		$uname = $_SESSION['pz_uname'];
+	if (isset($_SESSION['z_uid'])) {
+		$email = $_SESSION['z_uid'];
+		$uname = $_SESSION['z_uname'];
 		$login = true;
 	}
     ?>

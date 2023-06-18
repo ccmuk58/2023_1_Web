@@ -2,7 +2,7 @@
 session_start();
 include_once('dbconn.php');
 
-$email = $_SESSION['pz_uid'];
+$email = $_SESSION['z_uid'];
 
 if(!isset($_POST['chk'])) { // 체크한 항목이 없을 때
     echo "<script>alert('삭제할 장바구니 아이템들을 선택해야 합니다.');";

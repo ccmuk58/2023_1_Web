@@ -16,8 +16,8 @@ if(isset($recordset) && $recordset->num_rows == 1){ // isset() 만약 ()변수�
     $row = $recordset->fetch_assoc(); # 테이블에서 검색된 레크드 하나를 연관배열로 반환
     $uname = $row['name']; # 컬럼명이 키이므로 컬럼명으로 값을 읽어옴
     # 세션 데이터를 생성
-    $_SESSION['pz_uid'] = $email;
-    $_SESSION['pz_uname'] = $uname;
+    $_SESSION['z_uid'] = $email;
+    $_SESSION['z_uname'] = $uname;
     echo "<script>alert('로그인 성공하였습니다.')</script>";
     echo "<script>location.replace('../index.php')</script>";
 }

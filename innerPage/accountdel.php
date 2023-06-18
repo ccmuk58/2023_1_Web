@@ -8,7 +8,7 @@
 session_start();
 include_once('dbconn.php');
 
-$email = $_SESSION['pz_uid'];
+$email = $_SESSION['z_uid'];
 $sql = "delete from member where email='$email'";
 if($conn->query($sql)) {
     session_destroy();

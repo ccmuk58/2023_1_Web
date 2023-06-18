@@ -12,8 +12,8 @@
     <?php
         session_start();
         include_once('dbconn.php');
-        $uname = $_SESSION['pz_uname'];
-        $email = $_SESSION['pz_uid'];
+        $uname = $_SESSION['z_uname'];
+        $email = $_SESSION['z_uid'];
         #새로운 주문 번호 생성. 현재 마지막 주문번호를 가져와서 순번을 하나씩 증가시킴
         $sql = "select max(ordno) maxordno from zorder";
         $result = $conn->query($sql);

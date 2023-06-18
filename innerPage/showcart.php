@@ -9,7 +9,7 @@
 <body>
     <?php
 session_start();
-$email = $_SESSION['pz_uid'];
+$email = $_SESSION['z_uid'];
 include_once('dbconn.php');
 $sql = "select * from cart where email = '$email'";
 $result = $conn->query($sql);
