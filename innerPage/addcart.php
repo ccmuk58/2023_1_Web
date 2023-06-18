@@ -7,7 +7,10 @@
 </head>
 
 <body>
-    <?php $menutype = $_GET['menutype']; ?>
+    <?php 
+    $menutype = $_GET['menutype']; 
+    $time = date('H').date('i').date('s'); //ex)130311 (13시 3분 11초)
+    ?>
 
     <div id="navbar">
         <a href="../index.php" id="logo">
@@ -31,7 +34,8 @@
                 <img src='../img/<?=$photo?>'>
             </div>
             <div class="row" id="menuoption">
-                <input type="radio" name="size" value="single" checked>싱글(<?= $single ?>)<input type="radio" name="size" value="set">세트(<?= $set ?>)<input type="text" name="singleprice" value="<?= $single ?>" hidden>
+                <input type="radio" name="size" value="single" checked>싱글(<?= $single ?>)<input type="radio" name="size" value="set">세트(<?= $set ?>)
+                <input type="text" name="singleprice" value="<?= $single ?>" hidden>
                 <input type="text" name="setprice" value="<?= $set ?>" hidden>
 
             </div>
@@ -84,6 +88,8 @@
 
             <input type="text" name="menutype" value="<?= $menutype ?>" hidden>
             <input type="text" name="name" value="<?= $name ?>" hidden>
+            <input type="text" name="time" value="<?=$time?>" hidden>
+
             <div class="row">
                 <input type="submit" value="Put In" class="btn">
             </div>

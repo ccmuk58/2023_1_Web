@@ -9,6 +9,7 @@ $menutype = $_POST['menutype'];
 $food = $_POST['name'];
 $size = $_POST['size'] ?? '';
 $qty = $_POST['qty'];
+$time = $_POST['time'];
 $price = 0;
 
 if ($menutype == "burger") {
@@ -29,7 +30,7 @@ if ($menutype == "burger") {
 $total = $qty * $price;
 # INSERT SQL 작성하고 실행
 
-$sql = "insert into cart values('$email','$food','$size',$qty, $price, $total)";
+$sql = "insert into cart values('$email','$food','$size',$qty, $price, $total,$time)";
 if ($conn->query($sql)) {
 	echo "<script> let yesno;
             yesno = confirm('장바구니로 이동하시겠습니까?');
