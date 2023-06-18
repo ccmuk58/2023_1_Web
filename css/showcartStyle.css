@@ -15,19 +15,19 @@ body {
     top: 4vh;
 }
 .logobox {
-    margin-top: 2vh;
+    margin-top: 3vh;
     display: inline-block;
 }
 
 .logo {
-    width: 5vh;
-    height: 5vh;
+    width: 10vh;
+    height: 10vh;
     background-color: #db0007;
     color: #fbb90d;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4.5vh;
+    font-size: 10vh;
     font-weight: bold;
     text-decoration-line: none;
 }

@@ -11,6 +11,11 @@ $amount = $_POST['amount'];
 $delamt = $_POST['delamt'];
 $total = $amount + $delamt;
 
+if(!(strlen($address) > 0)){ // 배달주소를 작성하지 않았을 때
+    echo "<script>alert('배달주소를 작성해주세요.');";
+    echo "history.go(-1); </script>";
+}
+else{
 #트랜잭션 처리를 위해서 autocommit을 해제하기. autocommit은 하나의 operation 마다 자동 확정.
 $conn -> autocommit(false);
 
@@ -62,4 +67,5 @@ $conn -> commit();
 $conn -> autocommit(true); #반드시 autocommit을 설정하여야 함.
 echo "<script>alert('음식 배달 주문이 정상적으로 생성되었습니다.');";
 echo "location.href = '../index.php'</script>";
+    }
 ?>
