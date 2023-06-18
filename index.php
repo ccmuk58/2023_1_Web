@@ -52,10 +52,6 @@
 		$email = $_SESSION['pz_uid'];
 		$uname = $_SESSION['pz_uname'];
 		$login = true;
-		// // 로그인한 사용자의 장바구니 담긴 물품 개수를 알아보자
-		// $sql = "select count(*) pnum from cart where email = '$email'";
-		// $result = $conn->query($sql);
-		// $row = $result->fetch_assoc();
 	}
     ?>
     <!-- 상단 네비게이션 바 -->
